@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 
@@ -29,7 +30,6 @@
     <div class="wrap" style="background-color: #003451;">
         <div class="centerPage">
             <div class="ourStory">
-                <!-- <div class="line"></div> -->
                 <div class='fontBox'>
                     <p class="bodoniFont" style="color: white;font-size: 30pt;letter-spacing: 5px;">OUR STORY</p>
                     <p style="color: white;font-size: 30pt;letter-spacing: 10px;">我們的故事</p>
@@ -37,16 +37,16 @@
                 <ul>
                     <li><p>2016.11.02</p>
                         <p class="chineseFont">這天月球有著特殊的天文異象，</p>
-                        <p class="chineseFont" style="font-size:30pt;color:#AA854F;padding-top: 20px;padding-left:200px;">「超級月亮」</p>
+                        <p class="chineseFont" id="superMoon">「超級月亮」</p>
                     </li>
                     <li class="universe">
                         
-                            <p style="right: 55px; top:60px;">2016.11.02</p>
-                            <p style="right: 45px;letter-spacing: 20px;">月球位置</p>
-                            <p style="left: 290px;top:145px;">最遠點</p>
-                            <p style="right: 320px;top:145px;">最近點</p>
-                            <p style="left: 240px;top:200px;">407600km</p>
-                            <p style="right:270px;top:200px;">356500km</p>
+                            <p class="universeFont1">2016.11.02</p>
+                            <p class="universeFont2">月球位置</p>
+                            <p class="universeFont3">最遠點</p>
+                            <p class="universeFont4">最近點</p>
+                            <p class="universeFont5">407600km</p>
+                            <p class="universeFont6">356500km</p>
  
                     </li>
                     <li><p class="chineseFont" >這次是月亮自1948年來最接近</p>
@@ -116,8 +116,19 @@
     </div>
     <div class="wrap">
         <div class="centerPage">    
-            <div class="photoPage"></div>
+            <div class="photoPage">
+                <div class="fontBox">
+                    <p class="bodoniFont" >PHOTO</p>
+                    <p style="font-family: PMingLiU;letter-spacing: 10px;">周陸囍照</p>
+                </div>
+                <img src="img/img2.jpg" alt="">
+                <img src="img/img3.jpg" alt="">
+                <a href="#">
+                    <p>VIEW MORE</p>
+                </a>
+            </div>
         </div>
     </div>
+    <div class="rwdTest">Test Rwd</div>
 </body>
 </html>

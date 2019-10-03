@@ -30,9 +30,9 @@ img{
 .bodoniFont{
     font-family: bodoni ;
 }
-.chineseFont{
+/* .chineseFont{
     font-family: "Microsoft JhengHei";
-}
+} */
 .wrap .centerPage .welcomePage{
     background-color: white;
     background-image: url('../img/img1.jpg');
@@ -50,7 +50,7 @@ img{
 }
 .line{
     width: 1.5px;
-    height: 10px;
+    height: 150px;
     position: absolute;
     background-color: white;
     margin-left: 510px;
@@ -104,6 +104,37 @@ img{
 .universe p{
     position:absolute;
 }
+#superMoon{
+    font-size:30pt;
+    color:#AA854F;
+    padding-top: 20px;
+    padding-left:200px;
+}
+.universeFont1{
+    right: 55px; top:60px;
+}
+.universeFont2{
+    right: 45px;
+    letter-spacing: 20px;
+}
+.universeFont3{
+    left: 290px;
+    top:145px;
+}
+.universeFont4{
+    right: 320px;
+    top:145px;
+}
+.universeFont5{
+    left: 240px;
+    top:200px;
+    
+}
+.universeFont6{
+    right:270px;
+    top:200px;
+    
+}
 .weddingDesign{
     background-color: white;
     padding-top: 50px;
@@ -152,4 +183,168 @@ img{
     float: left;
     padding-top: 10px;
     padding-left: 40px;
+}
+.photoPage{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.photoPage .fontBox{
+    width: 300px;
+    padding:20px;
+    border-color: #AB8652;
+}
+.photoPage .fontBox p{
+    font-size: 30pt;
+    color: #AB8652;
+    letter-spacing: 10px;
+}
+.photoPage img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.photoPage a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    display:block;
+    color: white;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    padding: 20px 10px ;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: white;
+}
+.photoPage a:hover{
+    border-color: #AB8652;
+    color: #AB8652;
+}
+.rwdTest{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(68, 66, 66);
+}
+@media screen and (max-width : 768px) {
+    .rwdTest{
+        visibility:visible;
+    }
+    img{
+        /* margin: 0 auto; */
+        max-width: 100vw;
+    }
+    .wrap{
+        width: 100vw;
+    }
+    .centerPage{
+        width: 100vw;
+    }
+    .wrap .centerPage .welcomePage{
+        background-position:-28vw -350px;
+    }
+    .line{
+        margin-left: 49vw;
+    }
+    .ourStory ul li{
+        padding-left: 15vw;
+        
+    }
+    #superMoon{
+        padding-left:35vw;
+    }
+    .universeFont1{
+        right: 1vw; top:5vw;
+    }
+    .universeFont2{
+        right: 4vw;
+        top:10vw;
+    }
+    .universeFont3{
+        left: 30vw;
+        top:15vw;
+    }
+    .universeFont4{
+        right: 25vw;
+        top:15vw;
+    }
+    .universeFont5{
+        left: 25vw;
+        top:19vw;
+        
+    }
+    .universeFont6{
+        right:20vw;
+        top:19vw;
+        
+    }
+    .logo2{
+        top: 3vw;
+        left: 18vw;
+    }
+    .weddingDesign ul li{
+        padding-left: 20vw;
+    }
+    .weddingDesign ul li p{
+        text-align: left;
+        color: #9FA0A0;
+        padding-bottom: 5px;
+        letter-spacing: 15px;
+    }
+    .colorspace{
+        padding-bottom: 100px;
+    }
+    .colorBox{
+        height: 80px;
+        width: 80px;
+        background-color: #000000;
+        float: left;
+    }
+    .colorIntroduction{
+        float: left;
+        padding-top: 10px;
+        padding-left: 40px;
+    }
+    .photoPage{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .photoPage .fontBox{
+        width: 300px;
+        padding:20px;
+        border-color: #AB8652;
+    }
+    .photoPage .fontBox p{
+        font-size: 30pt;
+        color: #AB8652;
+        letter-spacing: 10px;
+    }
+    .photoPage img{
+        width: 80%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .photoPage a{
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;
+        display:block;
+        color: white;
+        margin: 0 auto;
+        width: 300px;
+        height: auto;
+        padding: 20px 10px ;
+        border-style: solid;
+        border-width: 1.5px;
+        border-color: white;
+    }
+    .photoPage a:hover{
+        border-color: #AB8652;
+        color: #AB8652;
+    }
+
 }

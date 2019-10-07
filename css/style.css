@@ -60,19 +60,62 @@ p{
     color: #003A59;
     letter-spacing: 10px;
 }
+
 #scrollDowmFont{
     padding-top:880px;
     padding-bottom: 25px;
     text-align: left;
-    padding-left: 155px; 
+    padding-left: 310px; 
     color: white;
+    -webkit-animation-name: FontcolorChange; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  	animation-name: FontcolorChange;
+  	animation-duration: 4s;
+  	animation-iteration-count:infinite;
+}
+@-webkit-keyframes FontcolorChange {
+  0% {color: #FFFFFF;}
+  25% {color: #003451;}
+  50% {color: #AA854F;}
+  75% {color: #646464;}
+  100% {color: #FFFFFF;}
+}
+
+/* Standard syntax */
+@keyframes FontcolorChange {
+ 0% {color: #FFFFFF;}
+  25% {color: #003451;}
+  50% {color: #AA854F;}
+  75% {color: #646464;}
+  100% {color: #FFFFFF;}
 }
 .line{
     width: 1.5px;
-    height: 150px;
+    height: 0px;
     position: absolute;
     background-color: white;
     margin-left: 510px;
+   -webkit-animation-name: colorChange; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+}
+@-webkit-keyframes colorChange {
+  0% {background-color: #FFFFFF;}
+  25% {background-color: #003451;}
+  50% {background-color: #AA854F;}
+  75% {background-color: #646464;}
+  100% {background-color: #FFFFFF;}
+}
+
+/* Standard syntax */
+@keyframes colorChange {
+ 0% {background-color: #FFFFFF;height: 0px;}
+  25% {background-color: #003451;height: 38px;}
+  50% {background-color: #AA854F;height: 76px;}
+  75% {background-color: #646464;height: 114px;}
+  100% {background-color: #FFFFFF;height: 150px;}
 }
 .ourStory{
     padding-bottom: 200px;
@@ -101,7 +144,7 @@ p{
 .ourStory ul li{
     border-width: 1.5px;
     border-color: white;
-    padding-left: 300px;
+    padding-left: 120px;
     
 }
 .ourStory ul li p{
@@ -137,14 +180,15 @@ p{
     font-size:30pt;
     color:#AA854F;
     padding-top: 20px;
-    padding-left:200px;
+    padding-left:500px;
+
 }
 .universeFont1{
-    right: 55px; top:60px;
+    right: 100px; top:60px;
 }
 .universeFont2{
-    right: 45px;
-    letter-spacing: 20px;
+    right: 100px;
+    /*letter-spacing: 30px;*/
 }
 .universeFont3{
     left: 290px;
@@ -165,7 +209,7 @@ p{
     
 }
 #universeFont7{
-    padding: 40px 0 40px 300px;
+    padding: 40px 0 40px 500px;
 }
 .weddingDesign{
     background-color: white;
@@ -286,6 +330,13 @@ p{
     .wrap .centerPage .welcomePage{
         background-position:-28vw -350px;
     }
+    #scrollDowmFont{
+    /*padding-top:880px;*/
+    /*padding-bottom: 25px;*/
+    /*text-align: left;*/
+    padding-left: 180px; 
+    /*color: white;*/
+}
     .line{
         margin-left: 49vw;
     }
@@ -319,8 +370,11 @@ p{
     .universeFont6{
         right:20vw;
         top:19vw;
-        
+     
     }
+    #universeFont7{
+    padding: 40px 0 40px 350px;
+	}
     .logo2{
         top: 3vw;
         left: 18vw;
@@ -994,4 +1048,48 @@ p{
         color: #AB8652;
     } */
 
+}
+/*jquary*/
+#beginFontAction1{
+	opacity: 0;
+	transition: cubic-bezier(0.4, 0, 1, 1) 1s;
+	
+}
+#beginFontAction1.active{
+	opacity: 1;
+}
+
+#beginFontAction2{
+	opacity: 0;
+	transition: cubic-bezier(0.4, 0, 1, 1) 1s;
+	transition-delay: 1s;
+}
+#beginFontAction2.active{
+	opacity: 1;
+}
+.slideln{
+	opacity: 0;
+}
+.slideln.active{
+	opacity: 1;
+	transition: cubic-bezier(0.4, 0, 1, 1) 1.5s;
+	
+}
+.slidelnDelay{
+	opacity: 0;
+}
+.slidelnDelay.active{
+	opacity: 1;
+	transition: cubic-bezier(0.4, 0, 1, 1) 1.5s;
+	transition-delay: 1.5s;
+	
+}
+.slidelnDelay2{
+	opacity: 0;
+}
+.slidelnDelay2.active{
+	opacity: 1;
+	transition: cubic-bezier(0.4, 0, 1, 1) 1.5s;
+	transition-delay: 2s;
+	
 }

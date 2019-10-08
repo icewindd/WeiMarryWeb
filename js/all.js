@@ -16,15 +16,15 @@ $(document).ready(function() {
 			var photoPageH = $('.photoPage').position().top;
 				//動畫
 			if(  scrollVal > ourStoryH-100){
-				$('.slideln').addClass('active');
-				$('.slidelnDelay').addClass('active');
-				$('.slidelnDelay2').addClass('active');
+				$('.ourStory .slideln').addClass('active');
+				$('.ourStory .slidelnDelay').addClass('active');
+				$('.ourStory .slidelnDelay2').addClass('active');
 
 			}
 			if(  scrollVal > weddingDesignH-100){
-				$('.slideln').addClass('active');
-				$('.slidelnDelay').addClass('active');
-				$('.slidelnDelay2').addClass('active');
+				$('.weddingDesign .slideln').addClass('active');
+				$('.weddingDesign .slidelnDelay').addClass('active');
+				$('.weddingDesign .slidelnDelay2').addClass('active');
 
 			}
 

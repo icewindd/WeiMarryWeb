@@ -352,6 +352,10 @@ p {
     letter-spacing: 18px;
 }
 
+.colorLetter {
+    letter-spacing: 5px;
+}
+
 .photoPage {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -637,7 +641,6 @@ p {
     }
     .colorspace {
         /* padding-bottom: 100px; */
-        /
     }
     .colorBox {
         height: 60px;
@@ -693,92 +696,6 @@ p {
 }
 
 @media screen and (max-width: 376px) {
-    .wrap .centerPage .welcomePage {
-        /* background-color: white;
-        background-image: url('../img/img1.jpg');
-        background-size: cover; */
-        /* background-size: 100vw auto; */
-        /* background-repeat: no-repeat; */
-        /* background-position:0vw -10vw; */
-        /* padding-top: 60px; */
-        /* padding-bottom: 0px; */
-        /* background-color: #000000; */
-    }
-    .welcomePage p {
-        /* font-size: 20pt;  */
-        /* color: #003A59; */
-        /* letter-spacing: 5px; */
-    }
-    #scrollDowmFont {
-        padding-top: 280px;
-        /* padding-bottom: 0px; */
-        /* text-align: left; */
-        padding-left: 22vw;
-        /* color: white; */
-    }
-    .line {
-        /* width: 1.5px; */
-        /* height: 150px; */
-        /* position: absolute; */
-        /* background-color: white; */
-        /* margin-left: 50vw; */
-    }
-    .ourStory {
-        /* padding-bottom: 100px; */
-        /* padding-top: 50px; */
-    }
-    #ourStoryFonten {
-        /* color: white; */
-        /* font-size: 20pt; */
-        /* letter-spacing: 5px; */
-    }
-    #ourStoryFontch {
-        /* color: white; */
-        /* font-size: 20pt; */
-        /* letter-spacing: 5px; */
-    }
-    .fontBox {
-        /* margin:0 auto;  */
-        /* margin-bottom: 50px; */
-        /* width: 250px; */
-        /* border-style: solid; */
-        /* border-width: 1.5px; */
-        /* border-color: white; */
-        /* padding: 5px; */
-    }
-    .ourStory ul li {
-        /* border-width: 1.5px; */
-        /* border-color: white; */
-        /* padding-left: 10vw; */
-    }
-    .ourStory ul li p {
-        /* color: #9FA0A0; */
-        /* font-size: 15pt; */
-        /* letter-spacing: 3px; */
-        /* text-align: left; */
-        /* padding-bottom: 5px; */
-        /* font-family: "Microsoft JhengHei"; */
-    }
-    .ourStory ul img {
-        /* text-align: center; */
-        /* width: 40%; */
-        /* height: auto; */
-        /* margin-top: 100px; */
-        /* margin-bottom: 100px; */
-    }
-    .universe {
-        /* background-image: url('../img/universe.png'); */
-        /* background-size: cover; */
-        /* background-size: 100%; */
-        /* background-repeat: no-repeat; */
-        /* margin-top: 50px; */
-        /* padding: 100px 0 180px 0; */
-        /* position: relative; */
-        /* background-position:0 0; */
-    }
-    .universe p {
-        /* position:absolute; */
-    }
     #superMoon {
         /* font-size:25pt; */
         /* color:#AA854F; */
@@ -810,101 +727,32 @@ p {
         right: 19vw;
         top: 24vw;
     }
-    #universeFont7 {
-        /* padding: 40px 0 40px 20vw; */
-    }
-    .weddingDesign {
-        /* background-color: white; */
-        /* padding-top: 50px; */
-    }
-    .weddingDesign .fontBox {
-        /* width: 300px; */
-        /* border-style: solid; */
-        /* border-width: 1.5px; */
-        /* border-color: #000000; */
-        /* padding-top: 10px; */
-        /* padding-bottom: 10px; */
-    }
-    .weddingDesign .fontBox p {
-        /* font-size: 20pt; */
-        /* color: #000000; */
-    }
-    .weddingDesignFont1 {
-        /* letter-spacing: 20px; */
-        /* padding-left: 30px; */
-    }
-    .logo2 {
-        /* width: 80%; */
-        /* height: auto; */
-        /* opacity: 0.8;  */
-        /* filter: alpha(opacity=80);  */
-        /* position: relative; */
-        /* top: 30px; */
-        /* left: 0vw; */
-        /* margin-bottom: 70px; */
-    }
     .weddingDesign ul li {
-        /* padding-left: 5vw; */
+        padding-left: 5vw;
     }
     .weddingDesign ul li p {
         /* text-align: left; */
         /* color: #9FA0A0; */
         /* padding-bottom: 0px; */
-        letter-spacing: 10px;
+        /* letter-spacing: 10px; */
         /* font-size: 15pt; */
     }
     .colorspace {
         /* padding-bottom: 100px; */
     }
     .colorBox {
-        height: 100px;
-        width: 100px;
-        /* background-color: #000000; */
-        float: none;
-        margin-left: 10vw;
+        height: 60px;
+        width: 60px;
+        margin-left: 2vw;
     }
     .colorIntroduction {
-        /* float: left; */
-        padding-top: 5vw;
-        padding-left: 10px;
+        float: left;
+        /* padding-top: 5vw; */
+        /* padding-left: 10px; */
     }
-    /* .photoPage{
-        padding-top: 50px;
-        padding-bottom: 50px;
+    .colorLetter {
+        letter-spacing: 0px;
     }
-    .photoPage .fontBox{
-        width: 300px;
-        padding:20px;
-        border-color: #AB8652;
-    }
-    .photoPage .fontBox p{
-        font-size: 30pt;
-        color: #AB8652;
-        letter-spacing: 10px;
-    }
-    .photoPage img{
-        width: 80%;
-        height: auto;
-        margin-bottom: 50px;
-    }
-    .photoPage a{
-        text-align: center;
-        text-decoration: none;
-        font-size: 30px;
-        display:block;
-        color: white;
-        margin: 0 auto;
-        width: 300px;
-        height: auto;
-        padding: 20px 10px ;
-        border-style: solid;
-        border-width: 1.5px;
-        border-color: white;
-    }
-    .photoPage a:hover{
-        border-color: #AB8652;
-        color: #AB8652;
-    } */
 }
 
 @media screen and (max-width: 320px) {
@@ -930,66 +778,6 @@ p {
         /* text-align: left; */
         padding-left: 15vw;
         /* color: white; */
-    }
-    .line {
-        /* width: 1.5px; */
-        /* height: 150px; */
-        /* position: absolute; */
-        /* background-color: white; */
-        /* margin-left: 50vw; */
-    }
-    .ourStory {
-        /* padding-bottom: 100px; */
-        /* padding-top: 50px; */
-    }
-    #ourStoryFonten {
-        /* color: white; */
-        /* font-size: 20pt; */
-        /* letter-spacing: 5px; */
-    }
-    #ourStoryFontch {
-        /* color: white; */
-        /* font-size: 20pt; */
-        /* letter-spacing: 5px; */
-    }
-    .fontBox {
-        /* margin:0 auto;  */
-        /* margin-bottom: 50px; */
-        /* width: 250px; */
-        /* border-style: solid; */
-        /* border-width: 1.5px; */
-        /* border-color: white; */
-        /* padding: 5px; */
-    }
-    .ourStory ul li {
-        /* border-width: 1.5px; */
-        /* border-color: white; */
-        /* padding-left: 10vw; */
-    }
-    .ourStory ul li p {
-        /* color: #9FA0A0; */
-        /* font-size: 15pt; */
-        /* letter-spacing: 3px; */
-        /* text-align: left; */
-        /* padding-bottom: 5px; */
-        /* font-family: "Microsoft JhengHei"; */
-    }
-    .ourStory ul img {
-        /* text-align: center; */
-        /* width: 40%; */
-        /* height: auto; */
-        /* margin-top: 100px; */
-        /* margin-bottom: 100px; */
-    }
-    .universe {
-        /* background-image: url('../img/universe.png'); */
-        /* background-size: cover; */
-        /* background-size: 100%; */
-        /* background-repeat: no-repeat; */
-        /* margin-top: 50px; */
-        /* padding: 100px 0 180px 0; */
-        /* position: relative; */
-        /* background-position:0 0; */
     }
     .universe p {
         /* position:absolute; */
@@ -1028,42 +816,6 @@ p {
     #universeFont7 {
         padding: 40px 0 40px 50vw;
     }
-    #universe320FontR {
-        /*text-align: right;*/
-    }
-    .weddingDesign {
-        /* background-color: white; */
-        /* padding-top: 50px; */
-    }
-    .weddingDesign .fontBox {
-        /* width: 300px; */
-        /* border-style: solid; */
-        /* border-width: 1.5px; */
-        /* border-color: #000000; */
-        /* padding-top: 10px; */
-        /* padding-bottom: 10px; */
-    }
-    .weddingDesign .fontBox p {
-        /* font-size: 20pt; */
-        /* color: #000000; */
-    }
-    .weddingDesignFont1 {
-        /* letter-spacing: 20px; */
-        /* padding-left: 30px; */
-    }
-    .logo2 {
-        /* width: 80%; */
-        /* height: auto; */
-        /* opacity: 0.8;  */
-        /* filter: alpha(opacity=80);  */
-        /* position: relative; */
-        /* top: 30px; */
-        /* left: 0vw; */
-        /* margin-bottom: 70px; */
-    }
-    .weddingDesign ul li {
-        /*padding-left: 3vw;*/
-    }
     .weddingDesign ul li p {
         /* text-align: left; */
         /* color: #9FA0A0; */
@@ -1075,54 +827,17 @@ p {
         /* padding-bottom: 100px; */
     }
     .colorBox {
-        height: 100px;
-        width: 100px;
+        /* height: 100px; */
+        /* width: 100px; */
         /* background-color: #000000; */
-        float: none;
-        margin-left: 10vw;
+        /* float: none; */
+        margin-left: 0vw;
     }
     .colorIntroduction {
         /* float: left; */
-        padding-top: 5vw;
-        padding-left: 10px;
+        /* padding-top: 5vw; */
+        /* padding-left: 10px; */
     }
-    /* .photoPage{
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .photoPage .fontBox{
-        width: 300px;
-        padding:20px;
-        border-color: #AB8652;
-    }
-    .photoPage .fontBox p{
-        font-size: 30pt;
-        color: #AB8652;
-        letter-spacing: 10px;
-    }
-    .photoPage img{
-        width: 80%;
-        height: auto;
-        margin-bottom: 50px;
-    }
-    .photoPage a{
-        text-align: center;
-        text-decoration: none;
-        font-size: 30px;
-        display:block;
-        color: white;
-        margin: 0 auto;
-        width: 300px;
-        height: auto;
-        padding: 20px 10px ;
-        border-style: solid;
-        border-width: 1.5px;
-        border-color: white;
-    }
-    .photoPage a:hover{
-        border-color: #AB8652;
-        color: #AB8652;
-    } */
 }
 
 
@@ -1135,12 +850,12 @@ p {
 
 .weddingHomeMade .fontBox {
     width: 530px;
-    padding: 10px;
+    padding: 8px;
     border-color: #eae0d0;
 }
 
 .weddingHomeMade .fontBox p {
-    font-size: 30pt;
+    font-size: 28pt;
     color: #eae0d0;
     letter-spacing: 5px;
 }
@@ -1186,9 +901,9 @@ p {
 
 @media screen and (max-width: 426px) {
     .weddingHomeMade .fontBox p {
-        font-size: 20pt;
-        /* color: #eae0d0;
-        letter-spacing: 5px; */
+        font-size: 22pt;
+        color: #eae0d0;
+        letter-spacing: 0px;
     }
     .weddingHomeMade .fontBox {
         width: 370px;
@@ -1205,7 +920,8 @@ p {
 
 @media screen and (max-width: 376px) {
     .weddingHomeMade .fontBox p {
-        letter-spacing: 3px;
+        font-size: 21pt;
+        /* letter-spacing: 3px; */
     }
     .weddingHomeMade .fontBox {
         width: 350px;
@@ -1214,7 +930,7 @@ p {
 
 @media screen and (max-width: 320px) {
     .weddingHomeMade .fontBox p {
-        font-size: 18pt;
+        font-size: 17pt;
         letter-spacing: 1px;
     }
     .weddingHomeMade .fontBox {

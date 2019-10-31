@@ -1,1477 +1,1923 @@
-@import url('reset.css');
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body {
-    /* background-color: #003A59; */
-}
-
-img {
-    margin: 0 auto;
-    max-width: 100%;
-    /*margin-bottom: 50px;*/
-}
-
-.wrap {
-    width: 100%;
-    /* background-color: #003A59; */
-}
-
-.centerPage {
-    width: 1024px;
-    margin: 0 auto;
-    /*border-style: solid;*/
-    /*border-width: 1px;*/
-    text-align: center;
-}
-
-@font-face {
-    font-family: 'bodoni';
-    src: url('../font/BodoniFLF-Bold.eot') format('eot'), url('../font/BodoniFLF-Bold.otf') format('otf'), url('../font/BodoniFLF-Bold.ttf') format('ttf'), url('../font/BodoniFLF-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DFMing';
-    src: url('../font/DFMing.eot') format('eot'), url('../font/DFMing.otf') format('otf'), url('../font/DFMing.ttf') format('ttf'), url('../font/DFMing.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.bodoniFont {
-    font-family: bodoni;
-}
-
-.DFMingFont {
-    font-family: DFMing;
-}
-
-.clear {
-    clear: both;
-}
-
-.fontBox {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    position: relative;
-    /* border-style: solid; */
-    /* border-width: 2px; */
-    margin-top: 50px;
-    padding-bottom: 100px;
-}
-
-.fontBox h2 {
-    display: inline-block;
-    margin: 0 auto;
-    width: auto;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #A3B1BA;
-    padding: 10px 25px;
-    font-size: 30px;
-    letter-spacing: 0.5vw;
-    font-family: bodoni;
-    color: #FFFFFF;
-}
-
-.fontBox h3 {
-    padding-top: 10px;
-    position: absolute;
-    right: 0.8vw;
-    letter-spacing: 0.5vw;
-    font-family: DFMing;
-    color: #FFFFFF;
-    font-size: 18px;
-}
-
-.logo {
-    width: 100%;
-    /* background-color: #002D48; */
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.welcomePage {
-    background-image: url("../img/BG1.jpg");
-    background-size: cover;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    padding-top: 50px;
-    padding-bottom: 1050px;
-    background-position: 0px -350px;
-}
-
-.welcomePage h1 {
-    font-size: 28px;
-    letter-spacing: 0.8vw;
-    line-height: 40px;
-}
-
-.ourStoryPage {
-    background-color: #003451;
-    padding-bottom: 50px;
-}
-
-.ourStoryPage p {
-    color: #BDBEBF;
-    font-family: DFMing;
-    letter-spacing: 10px;
-    font-size: 20px;
-    line-height: 30px;
-    padding-bottom: 30px;
-    text-align: left;
-    margin-left: 320px;
-}
-
-.ourStoryPage h4,
-h5 {
-    font-size: 24px;
-    font-family: DFMing;
-    color: #9C713C;
-    letter-spacing: 15px;
-    text-align: right;
-    padding-right: 200px;
-    margin-bottom: 50px
-}
-
-.universe {
-    position: relative;
-}
-
-.universe img {
-    width: 60%;
-    padding-bottom: 60px;
-}
-
-.yamaSize {
-    padding-bottom: 60px;
-}
-
-
-/* 當天 */
-
-.universe .uniFint1 {
-    position: absolute;
-    top: 40px;
-    left: 450px;
-}
-
-
-/* 月球位置 */
-
-.universe .uniFint2 {
-    position: absolute;
-    top: 70px;
-    left: 420px;
-}
-
-
-/* 最遠點 */
-
-.universe .uniFint3 {
-    position: absolute;
-    top: 110px;
-    left: 20px;
-}
-
-
-/* 406700 km */
-
-.universe .uniFint4 {
-    position: absolute;
-    top: 150px;
-    left: 10px;
-    letter-spacing: 2px;
-}
-
-
-/* 最近點 */
-
-.universe .uniFint5 {
-    position: absolute;
-    top: 110px;
-    left: 265px;
-}
-
-
-/* 356500 km */
-
-.universe .uniFint6 {
-    position: absolute;
-    top: 150px;
-    left: 255px;
-    letter-spacing: 2px;
-}
-
-
-/* 月球軌跡 */
-
-.universe .uniFint7 {
-    position: absolute;
-    top: 250px;
-    left: 130px;
-}
-
-.weddingImagePage .fontBox h2 {
-    border-color: #647C8B;
-    color: #002841;
-}
-
-.weddingImagePage .fontBox h3 {
-    color: #002841;
-}
-
-.weddingImagePage img {
-    display: block;
-    width: 30%;
-}
-
-.weddingImagePage ul {
-    padding-top: 50px;
-}
-
-.weddingImagePage ul li h3 {
-    color: #002841;
-    font-size: 27px;
-    font-family: bodoni;
-    letter-spacing: 15px;
-    /* padding-bottom: 50px; */
-    /* font-family: DFMing; */
-}
-
-.weddingImagePage ul li span {
-    color: #002841;
-    font-size: 27px;
-    letter-spacing: 10px;
-    /* font-family: bodoni; */
-    /* font-family: DFMing; */
-}
-
-.weddingImagePage ul li p {
-    font-size: 20px;
-    color: #5F5E5E;
-    font-family: DFMing;
-    letter-spacing: 20px;
-    padding-top: 25px;
-    padding-bottom: 50px;
-    line-height: 40px;
-}
-
-.weddingImagePage ul li {
-    /* border-style: solid; */
-    /* border-width: 2px; */
-    text-align: left;
-    padding-left: 220px;
-    /* padding-top: 50px; */
-    /* position: relative; */
-}
-
-.colorBox {
-    /* position: absolute; */
-    margin-top: 15px;
-    top: 20px;
-    width: 100px;
-    height: 100px;
-    background-color: #002841;
-    float: left;
-    /* border-style: solid; */
-    /* border-width: 2px; */
-}
-
-.colorFont {
-    /* position: absolute; */
-    float: left;
-    padding-left: 50px;
-    font-family: DFMing;
-    /* border-style: solid; */
-    /* border-width: 2px; */
-}
-
-.weddingHomeMadePage {
-    background-color: #002841;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-.weddingHomeMadePage img {
-    width: 80%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: 10px 10px 10px #000000;
-}
-
-.linkBox {
-    display: block;
-    border-style: solid;
-    border-width: 1px;
-    font-size: 28px;
-    color: #FFFFFF;
-    margin: 0 auto;
-    padding: 20px 10px;
-    width: 300px;
-    letter-spacing: 5px;
-    font-family: bodoni;
-    text-decoration: none;
-}
-
-.weddingPhotoPage {
-    background-color: #9C713C;
-    padding-bottom: 50px;
-}
-
-.PhotoContent {
-    padding-bottom: 200px;
-}
-
-.PhotoContent p {
-    color: #002841;
-    font-size: 28px;
-    text-align: left;
-    font-family: DFMing;
-    letter-spacing: 20px;
-    margin-left: 180px;
-    line-height: 50px;
-}
-
-.designBox {
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-.designBox h4 {
-    font-family: DFMing;
-    display: inline-block;
-    color: #FFFFFF;
-    font-size: 18px;
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px 20px;
-    letter-spacing: 10px;
-    margin: 0 auto;
-}
-
-.designBox img {
-    width: 70%;
-    margin-top: 50px;
-    display: block;
-}
-
-.designBox .imgShadow {
-    box-shadow: 10px 10px 10px #000000;
-}
-
-.designBox p {
-    font-size: 18px;
-    font-family: DFMing;
-    color: #002841;
-    letter-spacing: 20px;
-    margin-top: 80px;
-    text-align: left;
-    padding-left: 20vw;
-    margin-bottom: 100px;
-    line-height: 30px;
-}
-
-.designBox h6 {
-    text-align: right;
-    font-family: DFMing;
-    color: #002841;
-    font-size: 18px;
-    letter-spacing: 10px;
-    margin-top: 25px;
-    margin-right: 180px;
-}
-
-
-/*------------------------------------768----------------------*/
-
-@media screen and (max-width: 768px) {
-    .centerPage {
-        width: 100vw;
-    }
-    .fontBox {
-        display: inline-block;
-        width: auto;
-        height: auto;
-        position: relative;
-        margin-top: 50px;
-        padding-bottom: 100px;
-    }
-    .fontBox h2 {
-        display: inline-block;
-        margin: 0 auto;
-        width: auto;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #A3B1BA;
-        padding: 10px 25px;
-        font-size: 30px;
-        letter-spacing: 0.5vw;
-    }
-    .fontBox h3 {
-        padding-top: 10px;
-        position: absolute;
-        right: 0.8vw;
-        letter-spacing: 0.5vw;
-        font-family: DFMing;
-        color: #FFFFFF;
-        font-size: 18px;
-    }
-    .welcomePage {
-        padding-top: 50px;
-        padding-bottom: 750px;
-        background-position: 0px -250px;
-    }
-    .welcomePage h1 {
-        font-size: 28px;
-        letter-spacing: 0.8vw;
-        line-height: 40px;
-    }
-    .ourStoryPage {
-        background-color: #003451;
-        padding-bottom: 50px;
-    }
-    .ourStoryPage p {
-        letter-spacing: 10px;
-        font-size: 20px;
-        line-height: 30px;
-        padding-bottom: 30px;
-        margin-left: 190px;
-    }
-    .ourStoryPage h4,
-    h5 {
-        font-size: 24px;
-        color: #9C713C;
-        letter-spacing: 15px;
-        padding-right: 100px;
-        margin-bottom: 50px
-    }
-    .universe img {
-        width: 80%;
-    }
-    /* 當天 */
-    .universe .uniFint1 {
-        position: absolute;
-        top: 40px;
-        left: 450px;
-    }
-    /* 月球位置 */
-    .universe .uniFint2 {
-        position: absolute;
-        top: 70px;
-        left: 420px;
-    }
-    /* 最遠點 */
-    .universe .uniFint3 {
-        position: absolute;
-        top: 110px;
-        left: 20px;
-    }
-    /* 406700 km */
-    .universe .uniFint4 {
-        position: absolute;
-        top: 150px;
-        left: 10px;
-        letter-spacing: 2px;
-    }
-    /* 最近點 */
-    .universe .uniFint5 {
-        position: absolute;
-        top: 110px;
-        left: 265px;
-    }
-    /* 356500 km */
-    .universe .uniFint6 {
-        position: absolute;
-        top: 150px;
-        left: 255px;
-        letter-spacing: 2px;
-    }
-    /* 月球軌跡 */
-    .universe .uniFint7 {
-        position: absolute;
-    }
-    .yamaSize {
-        width: 50%;
-    }
-    .weddingImagePage .fontBox h2 {
-        border-color: #647C8B;
-        color: #002841;
-    }
-    .weddingImagePage .fontBox h3 {
-        color: #002841;
-    }
-    .weddingImagePage img {
-        display: block;
-        width: 30%;
-    }
-    .weddingImagePage ul {
-        padding-top: 50px;
-    }
-    .weddingImagePage ul li h3 {
-        color: #002841;
-        font-size: 27px;
-        font-family: bodoni;
-        letter-spacing: 15px;
-        /* padding-bottom: 50px; */
-        /* font-family: DFMing; */
-    }
-    .weddingImagePage ul li span {
-        color: #002841;
-        font-size: 27px;
-        letter-spacing: 10px;
-        /* font-family: bodoni; */
-        /* font-family: DFMing; */
-    }
-    .weddingImagePage ul li p {
-        font-size: 20px;
-        color: #5F5E5E;
-        font-family: DFMing;
-        letter-spacing: 20px;
-        padding-top: 25px;
-        padding-bottom: 50px;
-        line-height: 40px;
-    }
-    .weddingImagePage ul li {
-        /* border-style: solid; */
-        /* border-width: 2px; */
-        text-align: left;
-        padding-left: 12.5vw;
-        /* padding-top: 50px; */
-        /* position: relative; */
-    }
-    .colorBox {
-        /* position: absolute; */
-        margin-top: 15px;
-        top: 20px;
-        width: 100px;
-        height: 100px;
-        background-color: #002841;
-        float: left;
-        /* border-style: solid; */
-        /* border-width: 2px; */
-    }
-    .colorFont {
-        /* position: absolute; */
-        float: left;
-        padding-left: 50px;
-        font-family: DFMing;
-        /* border-style: solid; */
-        /* border-width: 2px; */
-    }
-    .weddingHomeMadePage {
-        background-color: #002841;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .weddingHomeMadePage img {
-        width: 80%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        box-shadow: 10px 10px 10px #000000;
-    }
-    .linkBox {
-        display: block;
-        border-style: solid;
-        border-width: 1px;
-        font-size: 28px;
-        color: #FFFFFF;
-        margin: 0 auto;
-        padding: 20px 10px;
-        width: 300px;
-        letter-spacing: 5px;
-        font-family: bodoni;
-        text-decoration: none;
-    }
-    .weddingPhotoPage {
-        background-color: #9C713C;
-        padding-bottom: 50px;
-    }
-    .PhotoContent {
-        padding-bottom: 200px;
-    }
-    .PhotoContent p {
-        color: #002841;
-        font-size: 28px;
-        text-align: left;
-        font-family: DFMing;
-        letter-spacing: 20px;
-        margin-left: 60px;
-        line-height: 50px;
-    }
-    .designBox {
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .designBox h4 {
-        font-family: DFMing;
-        display: inline-block;
-        color: #FFFFFF;
-        font-size: 18px;
-        border-style: solid;
-        border-width: 1px;
-        padding: 10px 20px;
-        letter-spacing: 10px;
-        margin: 0 auto;
-    }
-    .designBox img {
-        width: 70%;
-        margin-top: 50px;
-        display: block;
-    }
-    .designBox .imgShadow {
-        box-shadow: 10px 10px 10px #000000;
-    }
-    .designBox p {
-        font-size: 18px;
-        font-family: DFMing;
-        color: #002841;
-        letter-spacing: 20px;
-        margin-top: 80px;
-        text-align: left;
-        padding-left: 90px;
-        margin-bottom: 100px;
-        line-height: 30px;
-    }
-    .designBox h6 {
-        text-align: right;
-        font-family: DFMing;
-        color: #002841;
-        font-size: 18px;
-        letter-spacing: 10px;
-        margin-top: 20px;
-        margin-right: 120px;
-    }
-}
-
-
-/*------------------------------------425----------------------*/
-
-@media screen and (max-width: 425px) {
-    .centerPage {
-        width: 100vw;
-    }
-    .fontBox {
-        display: inline-block;
-        width: auto;
-        height: auto;
-        position: relative;
-        margin-top: 50px;
-        padding-bottom: 100px;
-    }
-    .fontBox h2 {
-        display: inline-block;
-        margin: 0 auto;
-        width: auto;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #A3B1BA;
-        padding: 10px 25px;
-        font-size: 25px;
-        letter-spacing: 0.5vw;
-    }
-    .fontBox h3 {
-        padding-top: 10px;
-        position: absolute;
-        right: 0.8vw;
-        letter-spacing: 0.5vw;
-        font-family: DFMing;
-        color: #FFFFFF;
-        font-size: 18px;
-    }
-    .logo {
-        width: 45%;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin: 0 auto;
-    }
-    .welcomePage {
-        padding-top: 50px;
-        padding-bottom: 445px;
-        background-position: 0px -60px;
-    }
-    .welcomePage h1 {
-        font-size: 28px;
-        letter-spacing: 0.8vw;
-        line-height: 40px;
-    }
-    .ourStoryPage {
-        background-color: #003451;
-        padding-bottom: 50px;
-    }
-    .ourStoryPage p {
-        letter-spacing: 5px;
-        font-size: 20px;
-        line-height: 30px;
-        padding-bottom: 30px;
-        margin-left: 6vw;
-    }
-    .ourStoryPage h4,
-    h5 {
-        font-size: 24px;
-        color: #9C713C;
-        letter-spacing: 5px;
-        padding-right: 10px;
-        margin-bottom: 50px
-    }
-    .universe img {
-        width: 100%;
-    }
-    /* 當天 */
-    .universe .uniFint1 {
-        position: absolute;
-        top: 20px;
-        left: 320px;
-        font-size: 15px;
-    }
-    /* 月球位置 */
-    .universe .uniFint2 {
-        position: absolute;
-        top: 40px;
-        left: 300px;
-        font-size: 15px;
-    }
-    /* 最遠點 */
-    .universe .uniFint3 {
-        position: absolute;
-        top: 70px;
-        left: 50px;
-        font-size: 15px;
-    }
-    /* 406700 km */
-    .universe .uniFint4 {
-        position: absolute;
-        top: 95px;
-        left: 35px;
-        letter-spacing: 2px;
-        font-size: 15px;
-    }
-    /* 最近點 */
-    .universe .uniFint5 {
-        position: absolute;
-        top: 70px;
-        left: 225px;
-        font-size: 15px;
-    }
-    /* 356500 km */
-    .universe .uniFint6 {
-        position: absolute;
-        top: 95px;
-        left: 210px;
-        letter-spacing: 2px;
-        font-size: 15px;
-    }
-    /* 月球軌跡 */
-    .universe .uniFint7 {
-        position: absolute;
-        font-size: 15px;
-        top: 165px;
-    }
-    .yamaSize {
-        width: 50%;
-    }
-    .weddingImagePage .fontBox h2 {
-        border-color: #647C8B;
-        color: #002841;
-    }
-    .weddingImagePage .fontBox h3 {
-        color: #002841;
-    }
-    .weddingImagePage img {
-        display: block;
-        width: 30%;
-    }
-    .weddingImagePage ul {
-        padding-top: 50px;
-    }
-    .weddingImagePage ul li h3 {
-        color: #002841;
-        font-size: 25px;
-        font-family: bodoni;
-        letter-spacing: 10px;
-        /* padding-bottom: 50px; */
-        /* font-family: DFMing; */
-    }
-    .weddingImagePage ul li span {
-        color: #002841;
-        font-size: 25px;
-        letter-spacing: 7px;
-        /* font-family: bodoni; */
-        /* font-family: DFMing; */
-    }
-    .weddingImagePage ul li p {
-        font-size: 15px;
-        color: #5F5E5E;
-        font-family: DFMing;
-        letter-spacing: 10px;
-        padding-top: 25px;
-        padding-bottom: 50px;
-        line-height: 40px;
-    }
-    .weddingImagePage ul li {
-        /* border-style: solid; */
-        /* border-width: 2px; */
-        text-align: left;
-        padding-left: 5vw;
-        /* padding-top: 50px; */
-        /* position: relative; */
-    }
-    .colorBox {
-        /* position: absolute; */
-        margin-top: 15px;
-        top: 20px;
-        width: 100px;
-        height: 100px;
-        background-color: #002841;
-        float: left;
-        /* border-style: solid; */
-        /* border-width: 2px; */
-    }
-    .colorFont {
-        /* position: absolute; */
-        float: left;
-        padding-left: 50px;
-        font-family: DFMing;
-        /* border-style: solid; */
-        /* border-width: 2px; */
-    }
-    .weddingHomeMadePage {
-        background-color: #002841;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .weddingHomeMadePage img {
-        width: 80%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        box-shadow: 5px 5px 5px #000000;
-    }
-    .linkBox {
-        display: block;
-        border-style: solid;
-        border-width: 1px;
-        font-size: 28px;
-        color: #FFFFFF;
-        margin: 0 auto;
-        padding: 20px 10px;
-        width: 300px;
-        letter-spacing: 5px;
-        font-family: bodoni;
-        text-decoration: none;
-    }
-    .weddingPhotoPage {
-        background-color: #9C713C;
-        padding-bottom: 50px;
-    }
-    .PhotoContent {
-        padding-bottom: 200px;
-    }
-    .PhotoContent p {
-        color: #002841;
-        font-size: 20px;
-        text-align: left;
-        font-family: DFMing;
-        letter-spacing: 8px;
-        margin-left: 5vw;
-        line-height: 50px;
-    }
-    .designBox {
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .designBox h4 {
-        font-family: DFMing;
-        display: inline-block;
-        color: #FFFFFF;
-        font-size: 18px;
-        border-style: solid;
-        border-width: 1px;
-        padding: 10px 20px;
-        letter-spacing: 10px;
-        margin: 0 auto;
-    }
-    .designBox img {
-        width: 80%;
-        margin-top: 50px;
-        display: block;
-    }
-    .designBox .imgShadow {
-        box-shadow: 5px 5px 5px #000000;
-    }
-    .designBox p {
-        font-size: 15px;
-        font-family: DFMing;
-        color: #002841;
-        letter-spacing: 8px;
-        margin-top: 80px;
-        text-align: left;
-        padding-left: 7.5vw;
-        margin-bottom: 100px;
-        line-height: 30px;
-    }
-    .designBox h6 {
-        text-align: right;
-        font-family: DFMing;
-        color: #002841;
-        font-size: 18px;
-        letter-spacing: 10px;
-        margin-top: 20px;
-        margin-right: 10vw;
-    }
-}
-
-
-/*------------------------------------375----------------------*/
-
-@media screen and (max-width: 375px) {
-    .centerPage {
-        width: 100vw;
-    }
-    .fontBox {
-        display: inline-block;
-        width: auto;
-        height: auto;
-        position: relative;
-        margin-top: 50px;
-        padding-bottom: 100px;
-    }
-    .fontBox h2 {
-        display: inline-block;
-        margin: 0 auto;
-        width: auto;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #A3B1BA;
-        padding: 10px 25px;
-        font-size: 20px;
-        letter-spacing: 0.5vw;
-    }
-    .fontBox h3 {
-        padding-top: 10px;
-        position: absolute;
-        right: 0.8vw;
-        letter-spacing: 0.5vw;
-        font-family: DFMing;
-        color: #FFFFFF;
-        font-size: 18px;
-    }
-    .logo {
-        width: 45%;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin: 0 auto;
-    }
-    .welcomePage {
-        padding-top: 50px;
-        padding-bottom: 370px;
-        background-position: 0px -60px;
-    }
-    .welcomePage h1 {
-        font-size: 25px;
-        letter-spacing: 0.5vw;
-        line-height: 30px;
-    }
-    .ourStoryPage {
-        background-color: #003451;
-        padding-bottom: 50px;
-    }
-    .ourStoryPage p {
-        letter-spacing: 5px;
-        font-size: 18px;
-        line-height: 30px;
-        padding-bottom: 30px;
-        margin-left: 5vw;
-    }
-    .ourStoryPage h4,
-    h5 {
-        font-size: 22px;
-        color: #9C713C;
-        letter-spacing: 5px;
-        padding-right: 10px;
-        margin-bottom: 50px
-    }
-    .universe img {
-        width: 80%;
-    }
-    /* 當天 */
-    .universe .uniFint1 {
-        top: 10px;
-        left: 280px;
-        font-size: 15px;
-    }
-    /* 月球位置 */
-    .universe .uniFint2 {
-        position: absolute;
-        top: 25px;
-        left: 260px;
-        font-size: 15px;
-    }
-    /* 最遠點 */
-    .universe .uniFint3 {
-        position: absolute;
-        top: 45px;
-        left: 70px;
-        font-size: 15px;
-    }
-    /* 406700 km */
-    .universe .uniFint4 {
-        position: absolute;
-        top: 65px;
-        left: 65px;
-        letter-spacing: 1px;
-        font-size: 15px;
-    }
-    /* 最近點 */
-    .universe .uniFint5 {
-        position: absolute;
-        top: 45px;
-        left: 195px;
-        font-size: 15px;
-    }
-    /* 356500 km */
-    .universe .uniFint6 {
-        position: absolute;
-        top: 65px;
-        left: 185px;
-        letter-spacing: 1px;
-        font-size: 15px;
-    }
-    /* 月球軌跡 */
-    .universe .uniFint7 {
-        position: absolute;
-        font-size: 15px;
-        top: 115px;
-    }
-    .yamaSize {
-        width: 65%;
-    }
-    .weddingImagePage .fontBox h2 {
-        border-color: #647C8B;
-        color: #002841;
-    }
-    .weddingImagePage .fontBox h3 {
-        color: #002841;
-    }
-    .weddingImagePage img {
-        display: block;
-        width: 40%;
-    }
-    .weddingImagePage ul {
-        padding-top: 50px;
-    }
-    .weddingImagePage ul li h3 {
-        color: #002841;
-        font-size: 25px;
-        font-family: bodoni;
-        letter-spacing: 10px;
-        /* padding-bottom: 50px; */
-        /* font-family: DFMing; */
-    }
-    .weddingImagePage ul li span {
-        color: #002841;
-        font-size: 25px;
-        letter-spacing: 7px;
-        /* font-family: bodoni; */
-        /* font-family: DFMing; */
-    }
-    .weddingImagePage ul li p {
-        font-size: 15px;
-        color: #5F5E5E;
-        font-family: DFMing;
-        letter-spacing: 5px;
-        padding-top: 25px;
-        padding-bottom: 50px;
-        line-height: 40px;
-    }
-    .weddingImagePage ul li {
-        /* border-style: solid; */
-        /* border-width: 2px; */
-        text-align: left;
-        padding-left: 5vw;
-        /* padding-top: 50px; */
-        /* position: relative; */
-    }
-    .colorBox {
-        /* position: absolute; */
-        margin-top: 15px;
-        top: 20px;
-        width: 100px;
-        height: 100px;
-        background-color: #002841;
-        float: left;
-        /* border-style: solid; */
-        /* border-width: 2px; */
-    }
-    .colorFont {
-        /* position: absolute; */
-        float: left;
-        padding-left: 50px;
-        font-family: DFMing;
-        /* border-style: solid; */
-        /* border-width: 2px; */
-    }
-    .weddingHomeMadePage {
-        background-color: #002841;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .weddingHomeMadePage img {
-        width: 80%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        box-shadow: 5px 5px 5px #000000;
-    }
-    .linkBox {
-        display: block;
-        border-style: solid;
-        border-width: 1px;
-        font-size: 20px;
-        color: #FFFFFF;
-        margin: 0 auto;
-        padding: 20px 10px;
-        width: 240px;
-        letter-spacing: 5px;
-        font-family: bodoni;
-        text-decoration: none;
-    }
-    .weddingPhotoPage {
-        background-color: #9C713C;
-        padding-bottom: 50px;
-    }
-    .PhotoContent {
-        padding-bottom: 200px;
-    }
-    .PhotoContent p {
-        color: #002841;
-        font-size: 18px;
-        text-align: left;
-        font-family: DFMing;
-        letter-spacing: 5px;
-        margin-left: 5vw;
-        line-height: 50px;
-    }
-    .designBox {
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .designBox h4 {
-        font-family: DFMing;
-        display: inline-block;
-        color: #FFFFFF;
-        font-size: 18px;
-        border-style: solid;
-        border-width: 1px;
-        padding: 10px 20px;
-        letter-spacing: 10px;
-        margin: 0 auto;
-    }
-    .designBox img {
-        width: 80%;
-        margin-top: 50px;
-        display: block;
-    }
-    .designBox .imgShadow {
-        box-shadow: 5px 5px 5px #000000;
-    }
-    .designBox p {
-        font-size: 15px;
-        font-family: DFMing;
-        color: #002841;
-        letter-spacing: 6px;
-        margin-top: 80px;
-        text-align: left;
-        padding-left: 5vw;
-        margin-bottom: 100px;
-        line-height: 30px;
-    }
-    .designBox h6 {
-        text-align: right;
-        font-family: DFMing;
-        color: #002841;
-        font-size: 18px;
-        letter-spacing: 10px;
-        margin-top: 20px;
-        margin-right: 10vw;
-    }
-}
-
-
-/*------------------------------------320----------------------*/
-
-@media screen and (max-width: 320px) {
-    .centerPage {
-        width: 100vw;
-    }
-    .fontBox {
-        display: inline-block;
-        width: auto;
-        height: auto;
-        position: relative;
-        margin-top: 50px;
-        padding-bottom: 100px;
-    }
-    .fontBox h2 {
-        display: inline-block;
-        margin: 0 auto;
-        width: auto;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #A3B1BA;
-        padding: 8px 20px;
-        font-size: 18px;
-        letter-spacing: 0.5vw;
-    }
-    .fontBox h3 {
-        padding-top: 10px;
-        position: absolute;
-        right: 0.8vw;
-        letter-spacing: 0.5vw;
-        font-family: DFMing;
-        color: #FFFFFF;
-        font-size: 16px;
-    }
-    .logo {
-        width: 40%;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin: 0 auto;
-    }
-    .welcomePage {
-        padding-top: 20px;
-        padding-bottom: 340px;
-        background-position: 0px -60px;
-    }
-    .welcomePage h1 {
-        font-size: 20px;
-        letter-spacing: 0.5vw;
-        line-height: 30px;
-    }
-    .ourStoryPage {
-        background-color: #003451;
-        padding-bottom: 50px;
-    }
-    .ourStoryPage p {
-        letter-spacing: 2px;
-        font-size: 18px;
-        line-height: 30px;
-        padding-bottom: 30px;
-        margin-left: 3vw;
-    }
-    .ourStoryPage h4,
-    h5 {
-        font-size: 22px;
-        color: #9C713C;
-        letter-spacing: 5px;
-        padding-right: 10px;
-        margin-bottom: 50px
-    }
-    .universe img {
-        width: 100%;
-    }
-    /* 當天 */
-    .universe .uniFint1 {
-        top: 15px;
-        left: 245px;
-        font-size: 15px;
-    }
-    /* 月球位置 */
-    .universe .uniFint2 {
-        position: absolute;
-        top: 30px;
-        left: 225px;
-        font-size: 15px;
-    }
-    /* 最遠點 */
-    .universe .uniFint3 {
-        position: absolute;
-        top: 50px;
-        left: 58px;
-        font-size: 15px;
-    }
-    /* 406700 km */
-    .universe .uniFint4 {
-        position: absolute;
-        top: 70px;
-        left: 50px;
-        letter-spacing: 0px;
-        font-size: 15px;
-    }
-    /* 最近點 */
-    .universe .uniFint5 {
-        position: absolute;
-        top: 50px;
-        left: 180px;
-        font-size: 15px;
-    }
-    /* 356500 km */
-    .universe .uniFint6 {
-        position: absolute;
-        top: 70px;
-        left: 175px;
-        letter-spacing: 0px;
-        font-size: 15px;
-    }
-    /* 月球軌跡 */
-    .universe .uniFint7 {
-        position: absolute;
-        font-size: 15px;
-        top: 120px;
-        left: 110px;
-    }
-    .yamaSize {
-        width: 65%;
-    }
-    .weddingImagePage .fontBox h2 {
-        border-color: #647C8B;
-        color: #002841;
-    }
-    .weddingImagePage .fontBox h3 {
-        color: #002841;
-    }
-    .weddingImagePage img {
-        display: block;
-        width: 40%;
-    }
-    .weddingImagePage ul {
-        padding-top: 50px;
-    }
-    .weddingImagePage ul li h3 {
-        color: #002841;
-        font-size: 22px;
-        font-family: bodoni;
-        letter-spacing: 10px;
-        /* padding-bottom: 50px; */
-        /* font-family: DFMing; */
-    }
-    .weddingImagePage ul li span {
-        color: #002841;
-        font-size: 22px;
-        letter-spacing: 4px;
-        /* font-family: bodoni; */
-        /* font-family: DFMing; */
-    }
-    .weddingImagePage ul li p {
-        font-size: 15px;
-        color: #5F5E5E;
-        font-family: DFMing;
-        letter-spacing: 5px;
-        padding-top: 25px;
-        padding-bottom: 50px;
-        line-height: 40px;
-    }
-    .weddingImagePage ul li {
-        /* border-style: solid; */
-        /* border-width: 2px; */
-        text-align: left;
-        padding-left: 5vw;
-        /* padding-top: 50px; */
-        /* position: relative; */
-    }
-    .colorBox {
-        /* position: absolute; */
-        margin-top: 15px;
-        top: 20px;
-        width: 100px;
-        height: 100px;
-        background-color: #002841;
-        float: left;
-        /* border-style: solid; */
-        /* border-width: 2px; */
-    }
-    .colorFont {
-        /* position: absolute; */
-        float: left;
-        padding-left: 30px;
-        font-family: DFMing;
-        /* border-style: solid; */
-        /* border-width: 2px; */
-    }
-    .weddingHomeMadePage {
-        background-color: #002841;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .weddingHomeMadePage img {
-        width: 80%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        box-shadow: 5px 5px 5px #000000;
-    }
-    .linkBox {
-        display: block;
-        border-style: solid;
-        border-width: 1px;
-        font-size: 20px;
-        color: #FFFFFF;
-        margin: 0 auto;
-        padding: 20px 10px;
-        width: 240px;
-        letter-spacing: 5px;
-        font-family: bodoni;
-        text-decoration: none;
-    }
-    .weddingPhotoPage {
-        background-color: #9C713C;
-        padding-bottom: 50px;
-    }
-    .PhotoContent {
-        padding-bottom: 200px;
-    }
-    .PhotoContent p {
-        color: #002841;
-        font-size: 18px;
-        text-align: left;
-        font-family: DFMing;
-        letter-spacing: 3px;
-        margin-left: 4vw;
-        line-height: 40px;
-    }
-    .designBox {
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .designBox h4 {
-        font-family: DFMing;
-        display: inline-block;
-        color: #FFFFFF;
-        font-size: 18px;
-        border-style: solid;
-        border-width: 1px;
-        padding: 10px 20px;
-        letter-spacing: 10px;
-        margin: 0 auto;
-    }
-    .designBox img {
-        width: 80%;
-        margin-top: 50px;
-        display: block;
-    }
-    .designBox .imgShadow {
-        box-shadow: 5px 5px 5px #000000;
-    }
-    .designBox p {
-        font-size: 15px;
-        font-family: DFMing;
-        color: #002841;
-        letter-spacing: 4px;
-        margin-top: 80px;
-        text-align: left;
-        padding-left: 3vw;
-        margin-bottom: 100px;
-        line-height: 30px;
-    }
-    .designBox h6 {
-        text-align: right;
-        font-family: DFMing;
-        color: #002841;
-        font-size: 14px;
-        letter-spacing: 10px;
-        margin-top: 20px;
-        margin-right: 10vw;
-    }
-}
+        @import url('reset.css');
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        body {
+            /* background-color: #003A59; */
+        }
+        
+        img {
+            margin: 0 auto;
+            max-width: 100%;
+            /*margin-bottom: 50px;*/
+        }
+        
+        .wrap {
+            width: 100%;
+            /* background-color: #003A59; */
+        }
+        
+        .centerPage {
+            width: 1024px;
+            margin: 0 auto;
+            /*border-style: solid;*/
+            /*border-width: 1px;*/
+            text-align: center;
+        }
+        
+        @font-face {
+            font-family: 'bodoni';
+            src: url('../font/BodoniFLF-Bold.eot') format('eot'), url('../font/BodoniFLF-Bold.otf') format('otf'), url('../font/BodoniFLF-Bold.ttf') format('ttf'), url('../font/BodoniFLF-Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'DFMing';
+            src: url('../font/DFMing.eot') format('eot'), url('../font/DFMing.otf') format('otf'), url('../font/DFMing.ttf') format('ttf'), url('../font/DFMing.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .bodoniFont {
+            font-family: bodoni;
+        }
+        
+        .DFMingFont {
+            font-family: DFMing;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .fontBox {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            position: relative;
+            /* border-style: solid; */
+            /* border-width: 2px; */
+            margin-top: 50px;
+            padding-bottom: 100px;
+        }
+        
+        .fontBox h2 {
+            display: inline-block;
+            margin: 0 auto;
+            width: auto;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #A3B1BA;
+            padding: 10px 25px;
+            font-size: 30px;
+            letter-spacing: 0.5vw;
+            font-family: bodoni;
+            color: #FFFFFF;
+        }
+        
+        .fontBox h3 {
+            padding-top: 10px;
+            position: absolute;
+            right: 0.8vw;
+            letter-spacing: 0.5vw;
+            font-family: DFMing;
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+        
+        .logo {
+            width: 100%;
+            /* background-color: #002D48; */
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        
+        .welcomePage {
+            background-image: url("../img/BG1.jpg");
+            background-size: cover;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            padding-top: 50px;
+            padding-bottom: 1050px;
+            background-position: 0px -350px;
+            position: relative;
+        }
+        
+        .welcomePage h1 {
+            font-size: 28px;
+            letter-spacing: 0.8vw;
+            line-height: 40px;
+        }
+        
+        .ourStoryPage {
+            background-color: #003451;
+            padding-bottom: 50px;
+        }
+        
+        .ourStoryPage p {
+            color: #BDBEBF;
+            font-family: DFMing;
+            letter-spacing: 10px;
+            font-size: 20px;
+            line-height: 30px;
+            padding-bottom: 30px;
+            text-align: left;
+            margin-left: 320px;
+        }
+        
+        .ourStoryPage h4,
+        h5 {
+            font-size: 24px;
+            font-family: DFMing;
+            color: #9C713C;
+            letter-spacing: 15px;
+            text-align: right;
+            padding-right: 200px;
+            margin-bottom: 50px
+        }
+        
+        .universe {
+            position: relative;
+        }
+        
+        .universe img {
+            width: 60%;
+            padding-bottom: 60px;
+        }
+        
+        .yamaSize {
+            padding-bottom: 60px;
+        }
+        /* 當天 */
+        
+        .universe .uniFint1 {
+            position: absolute;
+            top: 40px;
+            left: 450px;
+        }
+        /* 月球位置 */
+        
+        .universe .uniFint2 {
+            position: absolute;
+            top: 70px;
+            left: 420px;
+        }
+        /* 最遠點 */
+        
+        .universe .uniFint3 {
+            position: absolute;
+            top: 110px;
+            left: 20px;
+        }
+        /* 406700 km */
+        
+        .universe .uniFint4 {
+            position: absolute;
+            top: 150px;
+            left: 10px;
+            letter-spacing: 2px;
+        }
+        /* 最近點 */
+        
+        .universe .uniFint5 {
+            position: absolute;
+            top: 110px;
+            left: 265px;
+        }
+        /* 356500 km */
+        
+        .universe .uniFint6 {
+            position: absolute;
+            top: 150px;
+            left: 255px;
+            letter-spacing: 2px;
+        }
+        /* 月球軌跡 */
+        
+        .universe .uniFint7 {
+            position: absolute;
+            top: 250px;
+            left: 130px;
+        }
+        
+        .weddingImagePage .fontBox h2 {
+            border-color: #647C8B;
+            color: #002841;
+        }
+        
+        .weddingImagePage .fontBox h3 {
+            color: #002841;
+        }
+        
+        .weddingImagePage img {
+            display: block;
+            width: 30%;
+        }
+        
+        .weddingImagePage ul {
+            padding-top: 50px;
+        }
+        
+        .weddingImagePage ul li h3 {
+            color: #002841;
+            font-size: 27px;
+            font-family: bodoni;
+            letter-spacing: 15px;
+            /* padding-bottom: 50px; */
+            /* font-family: DFMing; */
+        }
+        
+        .weddingImagePage ul li span {
+            color: #002841;
+            font-size: 27px;
+            letter-spacing: 10px;
+            /* font-family: bodoni; */
+            /* font-family: DFMing; */
+        }
+        
+        .weddingImagePage ul li p {
+            font-size: 20px;
+            color: #5F5E5E;
+            font-family: DFMing;
+            letter-spacing: 20px;
+            padding-top: 25px;
+            padding-bottom: 50px;
+            line-height: 40px;
+        }
+        
+        .weddingImagePage ul li {
+            /* border-style: solid; */
+            /* border-width: 2px; */
+            text-align: left;
+            padding-left: 220px;
+            /* padding-top: 50px; */
+            /* position: relative; */
+        }
+        
+        .colorBox {
+            /* position: absolute; */
+            margin-top: 15px;
+            top: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: #002841;
+            float: left;
+            /* border-style: solid; */
+            /* border-width: 2px; */
+        }
+        
+        .colorFont {
+            /* position: absolute; */
+            float: left;
+            padding-left: 50px;
+            font-family: DFMing;
+            /* border-style: solid; */
+            /* border-width: 2px; */
+        }
+        
+        .weddingHomeMadePage {
+            background-color: #002841;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        
+        .weddingHomeMadePage img {
+            width: 80%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            box-shadow: 10px 10px 10px #000000;
+        }
+        
+        .linkBox {
+            display: block;
+            border-style: solid;
+            border-width: 1px;
+            font-size: 28px;
+            color: #FFFFFF;
+            margin: 0 auto;
+            padding: 20px 10px;
+            width: 300px;
+            letter-spacing: 5px;
+            font-family: bodoni;
+            text-decoration: none;
+        }
+        
+        .weddingPhotoPage {
+            background-color: #9C713C;
+            padding-bottom: 50px;
+        }
+        
+        .PhotoContent {
+            padding-bottom: 200px;
+        }
+        
+        .PhotoContent p {
+            color: #002841;
+            font-size: 28px;
+            text-align: left;
+            font-family: DFMing;
+            letter-spacing: 20px;
+            margin-left: 180px;
+            line-height: 50px;
+        }
+        
+        .designBox {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        
+        .designBox h4 {
+            font-family: DFMing;
+            display: inline-block;
+            color: #FFFFFF;
+            font-size: 18px;
+            border-style: solid;
+            border-width: 1px;
+            padding: 10px 20px;
+            letter-spacing: 10px;
+            margin: 0 auto;
+        }
+        
+        .designBox img {
+            width: 70%;
+            margin-top: 50px;
+            display: block;
+        }
+        
+        .designBox .imgShadow {
+            box-shadow: 10px 10px 10px #000000;
+        }
+        
+        .designBox p {
+            font-size: 18px;
+            font-family: DFMing;
+            color: #002841;
+            letter-spacing: 20px;
+            margin-top: 80px;
+            text-align: left;
+            padding-left: 20vw;
+            margin-bottom: 100px;
+            line-height: 30px;
+        }
+        
+        .designBox h6 {
+            text-align: right;
+            font-family: DFMing;
+            color: #002841;
+            font-size: 18px;
+            letter-spacing: 10px;
+            margin-top: 25px;
+            margin-right: 180px;
+        }
+        /*------------------------------------768----------------------*/
+        
+        @media screen and (max-width: 768px) {
+            .wrap {
+                width: 768px;
+                /* background-color: #003A59; */
+            }
+            .centerPage {
+                width: 100vw;
+            }
+            .fontBox {
+                display: inline-block;
+                width: auto;
+                height: auto;
+                position: relative;
+                margin-top: 50px;
+                padding-bottom: 100px;
+            }
+            .fontBox h2 {
+                display: inline-block;
+                margin: 0 auto;
+                width: auto;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #A3B1BA;
+                padding: 10px 25px;
+                font-size: 30px;
+                letter-spacing: 0.5vw;
+            }
+            .fontBox h3 {
+                padding-top: 10px;
+                position: absolute;
+                right: 0.8vw;
+                letter-spacing: 0.5vw;
+                font-family: DFMing;
+                color: #FFFFFF;
+                font-size: 18px;
+            }
+            .welcomePage {
+                padding-top: 50px;
+                padding-bottom: 750px;
+                background-position: 0px -250px;
+            }
+            .welcomePage h1 {
+                font-size: 28px;
+                letter-spacing: 0.8vw;
+                line-height: 40px;
+            }
+            .ourStoryPage {
+                background-color: #003451;
+                padding-bottom: 50px;
+            }
+            .ourStoryPage p {
+                letter-spacing: 10px;
+                font-size: 20px;
+                line-height: 30px;
+                padding-bottom: 30px;
+                margin-left: 190px;
+            }
+            .ourStoryPage h4,
+            h5 {
+                font-size: 24px;
+                color: #9C713C;
+                letter-spacing: 15px;
+                padding-right: 100px;
+                margin-bottom: 50px
+            }
+            .universe img {
+                width: 80%;
+            }
+            /* 當天 */
+            .universe .uniFint1 {
+                position: absolute;
+                top: 40px;
+                left: 450px;
+            }
+            /* 月球位置 */
+            .universe .uniFint2 {
+                position: absolute;
+                top: 70px;
+                left: 420px;
+            }
+            /* 最遠點 */
+            .universe .uniFint3 {
+                position: absolute;
+                top: 110px;
+                left: 20px;
+            }
+            /* 406700 km */
+            .universe .uniFint4 {
+                position: absolute;
+                top: 150px;
+                left: 10px;
+                letter-spacing: 2px;
+            }
+            /* 最近點 */
+            .universe .uniFint5 {
+                position: absolute;
+                top: 110px;
+                left: 265px;
+            }
+            /* 356500 km */
+            .universe .uniFint6 {
+                position: absolute;
+                top: 150px;
+                left: 255px;
+                letter-spacing: 2px;
+            }
+            /* 月球軌跡 */
+            .universe .uniFint7 {
+                position: absolute;
+            }
+            .yamaSize {
+                width: 50%;
+            }
+            .weddingImagePage .fontBox h2 {
+                border-color: #647C8B;
+                color: #002841;
+            }
+            .weddingImagePage .fontBox h3 {
+                color: #002841;
+            }
+            .weddingImagePage img {
+                display: block;
+                width: 30%;
+            }
+            .weddingImagePage ul {
+                padding-top: 50px;
+            }
+            .weddingImagePage ul li h3 {
+                color: #002841;
+                font-size: 27px;
+                font-family: bodoni;
+                letter-spacing: 15px;
+                /* padding-bottom: 50px; */
+                /* font-family: DFMing; */
+            }
+            .weddingImagePage ul li span {
+                color: #002841;
+                font-size: 27px;
+                letter-spacing: 10px;
+                /* font-family: bodoni; */
+                /* font-family: DFMing; */
+            }
+            .weddingImagePage ul li p {
+                font-size: 20px;
+                color: #5F5E5E;
+                font-family: DFMing;
+                letter-spacing: 20px;
+                padding-top: 25px;
+                padding-bottom: 50px;
+                line-height: 40px;
+            }
+            .weddingImagePage ul li {
+                /* border-style: solid; */
+                /* border-width: 2px; */
+                text-align: left;
+                padding-left: 12.5vw;
+                /* padding-top: 50px; */
+                /* position: relative; */
+            }
+            .colorBox {
+                /* position: absolute; */
+                margin-top: 15px;
+                top: 20px;
+                width: 100px;
+                height: 100px;
+                background-color: #002841;
+                float: left;
+                /* border-style: solid; */
+                /* border-width: 2px; */
+            }
+            .colorFont {
+                /* position: absolute; */
+                float: left;
+                padding-left: 50px;
+                font-family: DFMing;
+                /* border-style: solid; */
+                /* border-width: 2px; */
+            }
+            .weddingHomeMadePage {
+                background-color: #002841;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            .weddingHomeMadePage img {
+                width: 80%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                box-shadow: 10px 10px 10px #000000;
+            }
+            .linkBox {
+                display: block;
+                border-style: solid;
+                border-width: 1px;
+                font-size: 28px;
+                color: #FFFFFF;
+                margin: 0 auto;
+                padding: 20px 10px;
+                width: 300px;
+                letter-spacing: 5px;
+                font-family: bodoni;
+                text-decoration: none;
+            }
+            .weddingPhotoPage {
+                background-color: #9C713C;
+                padding-bottom: 50px;
+            }
+            .PhotoContent {
+                padding-bottom: 200px;
+            }
+            .PhotoContent p {
+                color: #002841;
+                font-size: 28px;
+                text-align: left;
+                font-family: DFMing;
+                letter-spacing: 20px;
+                margin-left: 60px;
+                line-height: 50px;
+            }
+            .designBox {
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            .designBox h4 {
+                font-family: DFMing;
+                display: inline-block;
+                color: #FFFFFF;
+                font-size: 18px;
+                border-style: solid;
+                border-width: 1px;
+                padding: 10px 20px;
+                letter-spacing: 10px;
+                margin: 0 auto;
+            }
+            .designBox img {
+                width: 70%;
+                margin-top: 50px;
+                display: block;
+            }
+            .designBox .imgShadow {
+                box-shadow: 10px 10px 10px #000000;
+            }
+            .designBox p {
+                font-size: 18px;
+                font-family: DFMing;
+                color: #002841;
+                letter-spacing: 20px;
+                margin-top: 80px;
+                text-align: left;
+                padding-left: 90px;
+                margin-bottom: 100px;
+                line-height: 30px;
+            }
+            .designBox h6 {
+                text-align: right;
+                font-family: DFMing;
+                color: #002841;
+                font-size: 18px;
+                letter-spacing: 10px;
+                margin-top: 20px;
+                margin-right: 120px;
+            }
+        }
+        /*------------------------------------425----------------------*/
+        
+        @media screen and (max-width: 425px) {
+            .wrap {
+                width: 425px;
+                /* background-color: #003A59; */
+            }
+            .centerPage {
+                width: 100vw;
+            }
+            .fontBox {
+                display: inline-block;
+                width: auto;
+                height: auto;
+                position: relative;
+                margin-top: 50px;
+                padding-bottom: 100px;
+            }
+            .fontBox h2 {
+                display: inline-block;
+                margin: 0 auto;
+                width: auto;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #A3B1BA;
+                padding: 10px 25px;
+                font-size: 25px;
+                letter-spacing: 0.5vw;
+            }
+            .fontBox h3 {
+                padding-top: 10px;
+                position: absolute;
+                right: 0.8vw;
+                letter-spacing: 0.5vw;
+                font-family: DFMing;
+                color: #FFFFFF;
+                font-size: 18px;
+            }
+            .logo {
+                width: 45%;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                margin: 0 auto;
+            }
+            .welcomePage {
+                padding-top: 50px;
+                padding-bottom: 445px;
+                background-position: 0px -60px;
+            }
+            .welcomePage h1 {
+                font-size: 28px;
+                letter-spacing: 0.8vw;
+                line-height: 40px;
+            }
+            .ourStoryPage {
+                background-color: #003451;
+                padding-bottom: 50px;
+            }
+            .ourStoryPage p {
+                letter-spacing: 5px;
+                font-size: 20px;
+                line-height: 30px;
+                padding-bottom: 30px;
+                margin-left: 6vw;
+            }
+            .ourStoryPage h4,
+            h5 {
+                font-size: 24px;
+                color: #9C713C;
+                letter-spacing: 5px;
+                padding-right: 10px;
+                margin-bottom: 50px
+            }
+            .universe img {
+                width: 100%;
+            }
+            /* 當天 */
+            .universe .uniFint1 {
+                position: absolute;
+                top: 20px;
+                left: 320px;
+                font-size: 15px;
+            }
+            /* 月球位置 */
+            .universe .uniFint2 {
+                position: absolute;
+                top: 40px;
+                left: 300px;
+                font-size: 15px;
+            }
+            /* 最遠點 */
+            .universe .uniFint3 {
+                position: absolute;
+                top: 70px;
+                left: 50px;
+                font-size: 15px;
+            }
+            /* 406700 km */
+            .universe .uniFint4 {
+                position: absolute;
+                top: 95px;
+                left: 35px;
+                letter-spacing: 2px;
+                font-size: 15px;
+            }
+            /* 最近點 */
+            .universe .uniFint5 {
+                position: absolute;
+                top: 70px;
+                left: 225px;
+                font-size: 15px;
+            }
+            /* 356500 km */
+            .universe .uniFint6 {
+                position: absolute;
+                top: 95px;
+                left: 210px;
+                letter-spacing: 2px;
+                font-size: 15px;
+            }
+            /* 月球軌跡 */
+            .universe .uniFint7 {
+                position: absolute;
+                font-size: 15px;
+                top: 165px;
+            }
+            .yamaSize {
+                width: 50%;
+            }
+            .weddingImagePage .fontBox h2 {
+                border-color: #647C8B;
+                color: #002841;
+            }
+            .weddingImagePage .fontBox h3 {
+                color: #002841;
+            }
+            .weddingImagePage img {
+                display: block;
+                width: 30%;
+            }
+            .weddingImagePage ul {
+                padding-top: 50px;
+            }
+            .weddingImagePage ul li h3 {
+                color: #002841;
+                font-size: 25px;
+                font-family: bodoni;
+                letter-spacing: 10px;
+                /* padding-bottom: 50px; */
+                /* font-family: DFMing; */
+            }
+            .weddingImagePage ul li span {
+                color: #002841;
+                font-size: 25px;
+                letter-spacing: 7px;
+                /* font-family: bodoni; */
+                /* font-family: DFMing; */
+            }
+            .weddingImagePage ul li p {
+                font-size: 15px;
+                color: #5F5E5E;
+                font-family: DFMing;
+                letter-spacing: 10px;
+                padding-top: 25px;
+                padding-bottom: 50px;
+                line-height: 40px;
+            }
+            .weddingImagePage ul li {
+                /* border-style: solid; */
+                /* border-width: 2px; */
+                text-align: left;
+                padding-left: 5vw;
+                /* padding-top: 50px; */
+                /* position: relative; */
+            }
+            .colorBox {
+                /* position: absolute; */
+                margin-top: 15px;
+                top: 20px;
+                width: 100px;
+                height: 100px;
+                background-color: #002841;
+                float: left;
+                /* border-style: solid; */
+                /* border-width: 2px; */
+            }
+            .colorFont {
+                /* position: absolute; */
+                float: left;
+                padding-left: 50px;
+                font-family: DFMing;
+                /* border-style: solid; */
+                /* border-width: 2px; */
+            }
+            .weddingHomeMadePage {
+                background-color: #002841;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            .weddingHomeMadePage img {
+                width: 80%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                box-shadow: 5px 5px 5px #000000;
+            }
+            .linkBox {
+                display: block;
+                border-style: solid;
+                border-width: 1px;
+                font-size: 28px;
+                color: #FFFFFF;
+                margin: 0 auto;
+                padding: 20px 10px;
+                width: 300px;
+                letter-spacing: 5px;
+                font-family: bodoni;
+                text-decoration: none;
+            }
+            .weddingPhotoPage {
+                background-color: #9C713C;
+                padding-bottom: 50px;
+            }
+            .PhotoContent {
+                padding-bottom: 200px;
+            }
+            .PhotoContent p {
+                color: #002841;
+                font-size: 20px;
+                text-align: left;
+                font-family: DFMing;
+                letter-spacing: 8px;
+                margin-left: 5vw;
+                line-height: 50px;
+            }
+            .designBox {
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            .designBox h4 {
+                font-family: DFMing;
+                display: inline-block;
+                color: #FFFFFF;
+                font-size: 18px;
+                border-style: solid;
+                border-width: 1px;
+                padding: 10px 20px;
+                letter-spacing: 10px;
+                margin: 0 auto;
+            }
+            .designBox img {
+                width: 80%;
+                margin-top: 50px;
+                display: block;
+            }
+            .designBox .imgShadow {
+                box-shadow: 5px 5px 5px #000000;
+            }
+            .designBox p {
+                font-size: 15px;
+                font-family: DFMing;
+                color: #002841;
+                letter-spacing: 8px;
+                margin-top: 80px;
+                text-align: left;
+                padding-left: 7.5vw;
+                margin-bottom: 100px;
+                line-height: 30px;
+            }
+            .designBox h6 {
+                text-align: right;
+                font-family: DFMing;
+                color: #002841;
+                font-size: 18px;
+                letter-spacing: 10px;
+                margin-top: 20px;
+                margin-right: 10vw;
+            }
+        }
+        /*------------------------------------375----------------------*/
+        
+        @media screen and (max-width: 375px) {
+            .wrap {
+                width: 375px;
+                /* background-color: #003A59; */
+            }
+            .centerPage {
+                width: 100vw;
+            }
+            .fontBox {
+                display: inline-block;
+                width: auto;
+                height: auto;
+                position: relative;
+                margin-top: 50px;
+                padding-bottom: 100px;
+            }
+            .fontBox h2 {
+                display: inline-block;
+                margin: 0 auto;
+                width: auto;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #A3B1BA;
+                padding: 10px 25px;
+                font-size: 20px;
+                letter-spacing: 0.5vw;
+            }
+            .fontBox h3 {
+                padding-top: 10px;
+                position: absolute;
+                right: 0.8vw;
+                letter-spacing: 0.5vw;
+                font-family: DFMing;
+                color: #FFFFFF;
+                font-size: 18px;
+            }
+            .logo {
+                width: 45%;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                margin: 0 auto;
+            }
+            .welcomePage {
+                padding-top: 50px;
+                padding-bottom: 370px;
+                background-position: 0px -60px;
+            }
+            .welcomePage h1 {
+                font-size: 25px;
+                letter-spacing: 0.5vw;
+                line-height: 30px;
+            }
+            .ourStoryPage {
+                background-color: #003451;
+                padding-bottom: 50px;
+            }
+            .ourStoryPage p {
+                letter-spacing: 5px;
+                font-size: 18px;
+                line-height: 30px;
+                padding-bottom: 30px;
+                margin-left: 5vw;
+            }
+            .ourStoryPage h4,
+            h5 {
+                font-size: 22px;
+                color: #9C713C;
+                letter-spacing: 5px;
+                padding-right: 10px;
+                margin-bottom: 50px
+            }
+            .universe img {
+                width: 80%;
+            }
+            /* 當天 */
+            .universe .uniFint1 {
+                top: 10px;
+                left: 280px;
+                font-size: 15px;
+            }
+            /* 月球位置 */
+            .universe .uniFint2 {
+                position: absolute;
+                top: 25px;
+                left: 260px;
+                font-size: 15px;
+            }
+            /* 最遠點 */
+            .universe .uniFint3 {
+                position: absolute;
+                top: 45px;
+                left: 70px;
+                font-size: 15px;
+            }
+            /* 406700 km */
+            .universe .uniFint4 {
+                position: absolute;
+                top: 65px;
+                left: 65px;
+                letter-spacing: 1px;
+                font-size: 15px;
+            }
+            /* 最近點 */
+            .universe .uniFint5 {
+                position: absolute;
+                top: 45px;
+                left: 195px;
+                font-size: 15px;
+            }
+            /* 356500 km */
+            .universe .uniFint6 {
+                position: absolute;
+                top: 65px;
+                left: 185px;
+                letter-spacing: 1px;
+                font-size: 15px;
+            }
+            /* 月球軌跡 */
+            .universe .uniFint7 {
+                position: absolute;
+                font-size: 15px;
+                top: 115px;
+            }
+            .yamaSize {
+                width: 65%;
+            }
+            .weddingImagePage .fontBox h2 {
+                border-color: #647C8B;
+                color: #002841;
+            }
+            .weddingImagePage .fontBox h3 {
+                color: #002841;
+            }
+            .weddingImagePage img {
+                display: block;
+                width: 40%;
+            }
+            .weddingImagePage ul {
+                padding-top: 50px;
+            }
+            .weddingImagePage ul li h3 {
+                color: #002841;
+                font-size: 25px;
+                font-family: bodoni;
+                letter-spacing: 10px;
+                /* padding-bottom: 50px; */
+                /* font-family: DFMing; */
+            }
+            .weddingImagePage ul li span {
+                color: #002841;
+                font-size: 25px;
+                letter-spacing: 7px;
+                /* font-family: bodoni; */
+                /* font-family: DFMing; */
+            }
+            .weddingImagePage ul li p {
+                font-size: 15px;
+                color: #5F5E5E;
+                font-family: DFMing;
+                letter-spacing: 5px;
+                padding-top: 25px;
+                padding-bottom: 50px;
+                line-height: 40px;
+            }
+            .weddingImagePage ul li {
+                /* border-style: solid; */
+                /* border-width: 2px; */
+                text-align: left;
+                padding-left: 5vw;
+                /* padding-top: 50px; */
+                /* position: relative; */
+            }
+            .colorBox {
+                /* position: absolute; */
+                margin-top: 15px;
+                top: 20px;
+                width: 100px;
+                height: 100px;
+                background-color: #002841;
+                float: left;
+                /* border-style: solid; */
+                /* border-width: 2px; */
+            }
+            .colorFont {
+                /* position: absolute; */
+                float: left;
+                padding-left: 50px;
+                font-family: DFMing;
+                /* border-style: solid; */
+                /* border-width: 2px; */
+            }
+            .weddingHomeMadePage {
+                background-color: #002841;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            .weddingHomeMadePage img {
+                width: 80%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                box-shadow: 5px 5px 5px #000000;
+            }
+            .linkBox {
+                display: block;
+                border-style: solid;
+                border-width: 1px;
+                font-size: 20px;
+                color: #FFFFFF;
+                margin: 0 auto;
+                padding: 20px 10px;
+                width: 240px;
+                letter-spacing: 5px;
+                font-family: bodoni;
+                text-decoration: none;
+            }
+            .weddingPhotoPage {
+                background-color: #9C713C;
+                padding-bottom: 50px;
+            }
+            .PhotoContent {
+                padding-bottom: 200px;
+            }
+            .PhotoContent p {
+                color: #002841;
+                font-size: 18px;
+                text-align: left;
+                font-family: DFMing;
+                letter-spacing: 5px;
+                margin-left: 5vw;
+                line-height: 50px;
+            }
+            .designBox {
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            .designBox h4 {
+                font-family: DFMing;
+                display: inline-block;
+                color: #FFFFFF;
+                font-size: 18px;
+                border-style: solid;
+                border-width: 1px;
+                padding: 10px 20px;
+                letter-spacing: 10px;
+                margin: 0 auto;
+            }
+            .designBox img {
+                width: 80%;
+                margin-top: 50px;
+                display: block;
+            }
+            .designBox .imgShadow {
+                box-shadow: 5px 5px 5px #000000;
+            }
+            .designBox p {
+                font-size: 15px;
+                font-family: DFMing;
+                color: #002841;
+                letter-spacing: 6px;
+                margin-top: 80px;
+                text-align: left;
+                padding-left: 5vw;
+                margin-bottom: 100px;
+                line-height: 30px;
+            }
+            .designBox h6 {
+                text-align: right;
+                font-family: DFMing;
+                color: #002841;
+                font-size: 18px;
+                letter-spacing: 10px;
+                margin-top: 20px;
+                margin-right: 10vw;
+            }
+        }
+        /*------------------------------------320----------------------*/
+        
+        @media screen and (max-width: 320px) {
+            .wrap {
+                width: 320px;
+                /* background-color: #003A59; */
+            }
+            .centerPage {
+                width: 100vw;
+            }
+            .fontBox {
+                display: inline-block;
+                width: auto;
+                height: auto;
+                position: relative;
+                margin-top: 50px;
+                padding-bottom: 100px;
+            }
+            .fontBox h2 {
+                display: inline-block;
+                margin: 0 auto;
+                width: auto;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #A3B1BA;
+                padding: 8px 20px;
+                font-size: 18px;
+                letter-spacing: 0.5vw;
+            }
+            .fontBox h3 {
+                padding-top: 10px;
+                position: absolute;
+                right: 0.8vw;
+                letter-spacing: 0.5vw;
+                font-family: DFMing;
+                color: #FFFFFF;
+                font-size: 16px;
+            }
+            .logo {
+                width: 40%;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                margin: 0 auto;
+            }
+            .welcomePage {
+                padding-top: 20px;
+                padding-bottom: 340px;
+                background-position: 0px -60px;
+            }
+            .welcomePage h1 {
+                font-size: 20px;
+                letter-spacing: 0.5vw;
+                line-height: 30px;
+            }
+            .ourStoryPage {
+                background-color: #003451;
+                padding-bottom: 50px;
+            }
+            .ourStoryPage p {
+                letter-spacing: 2px;
+                font-size: 18px;
+                line-height: 30px;
+                padding-bottom: 30px;
+                margin-left: 3vw;
+            }
+            .ourStoryPage h4,
+            h5 {
+                font-size: 22px;
+                color: #9C713C;
+                letter-spacing: 5px;
+                padding-right: 10px;
+                margin-bottom: 50px
+            }
+            .universe img {
+                width: 100%;
+            }
+            /* 當天 */
+            .universe .uniFint1 {
+                top: 15px;
+                left: 245px;
+                font-size: 15px;
+            }
+            /* 月球位置 */
+            .universe .uniFint2 {
+                position: absolute;
+                top: 30px;
+                left: 225px;
+                font-size: 15px;
+            }
+            /* 最遠點 */
+            .universe .uniFint3 {
+                position: absolute;
+                top: 50px;
+                left: 58px;
+                font-size: 15px;
+            }
+            /* 406700 km */
+            .universe .uniFint4 {
+                position: absolute;
+                top: 70px;
+                left: 50px;
+                letter-spacing: 0px;
+                font-size: 15px;
+            }
+            /* 最近點 */
+            .universe .uniFint5 {
+                position: absolute;
+                top: 50px;
+                left: 180px;
+                font-size: 15px;
+            }
+            /* 356500 km */
+            .universe .uniFint6 {
+                position: absolute;
+                top: 70px;
+                left: 175px;
+                letter-spacing: 0px;
+                font-size: 15px;
+            }
+            /* 月球軌跡 */
+            .universe .uniFint7 {
+                position: absolute;
+                font-size: 15px;
+                top: 120px;
+                left: 110px;
+            }
+            .yamaSize {
+                width: 65%;
+            }
+            .weddingImagePage .fontBox h2 {
+                border-color: #647C8B;
+                color: #002841;
+            }
+            .weddingImagePage .fontBox h3 {
+                color: #002841;
+            }
+            .weddingImagePage img {
+                display: block;
+                width: 40%;
+            }
+            .weddingImagePage ul {
+                padding-top: 50px;
+            }
+            .weddingImagePage ul li h3 {
+                color: #002841;
+                font-size: 22px;
+                font-family: bodoni;
+                letter-spacing: 10px;
+                /* padding-bottom: 50px; */
+                /* font-family: DFMing; */
+            }
+            .weddingImagePage ul li span {
+                color: #002841;
+                font-size: 22px;
+                letter-spacing: 4px;
+                /* font-family: bodoni; */
+                /* font-family: DFMing; */
+            }
+            .weddingImagePage ul li p {
+                font-size: 15px;
+                color: #5F5E5E;
+                font-family: DFMing;
+                letter-spacing: 5px;
+                padding-top: 25px;
+                padding-bottom: 50px;
+                line-height: 40px;
+            }
+            .weddingImagePage ul li {
+                /* border-style: solid; */
+                /* border-width: 2px; */
+                text-align: left;
+                padding-left: 5vw;
+                /* padding-top: 50px; */
+                /* position: relative; */
+            }
+            .colorBox {
+                /* position: absolute; */
+                margin-top: 15px;
+                top: 20px;
+                width: 100px;
+                height: 100px;
+                background-color: #002841;
+                float: left;
+                /* border-style: solid; */
+                /* border-width: 2px; */
+            }
+            .colorFont {
+                /* position: absolute; */
+                float: left;
+                padding-left: 30px;
+                font-family: DFMing;
+                /* border-style: solid; */
+                /* border-width: 2px; */
+            }
+            .weddingHomeMadePage {
+                background-color: #002841;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            .weddingHomeMadePage img {
+                width: 80%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                box-shadow: 5px 5px 5px #000000;
+            }
+            .linkBox {
+                display: block;
+                border-style: solid;
+                border-width: 1px;
+                font-size: 20px;
+                color: #FFFFFF;
+                margin: 0 auto;
+                padding: 20px 10px;
+                width: 240px;
+                letter-spacing: 5px;
+                font-family: bodoni;
+                text-decoration: none;
+            }
+            .weddingPhotoPage {
+                background-color: #9C713C;
+                padding-bottom: 50px;
+            }
+            .PhotoContent {
+                padding-bottom: 200px;
+            }
+            .PhotoContent p {
+                color: #002841;
+                font-size: 18px;
+                text-align: left;
+                font-family: DFMing;
+                letter-spacing: 3px;
+                margin-left: 4vw;
+                line-height: 40px;
+            }
+            .designBox {
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            .designBox h4 {
+                font-family: DFMing;
+                display: inline-block;
+                color: #FFFFFF;
+                font-size: 18px;
+                border-style: solid;
+                border-width: 1px;
+                padding: 10px 20px;
+                letter-spacing: 10px;
+                margin: 0 auto;
+            }
+            .designBox img {
+                width: 80%;
+                margin-top: 50px;
+                display: block;
+            }
+            .designBox .imgShadow {
+                box-shadow: 5px 5px 5px #000000;
+            }
+            .designBox p {
+                font-size: 15px;
+                font-family: DFMing;
+                color: #002841;
+                letter-spacing: 4px;
+                margin-top: 80px;
+                text-align: left;
+                padding-left: 3vw;
+                margin-bottom: 100px;
+                line-height: 30px;
+            }
+            .designBox h6 {
+                text-align: right;
+                font-family: DFMing;
+                color: #002841;
+                font-size: 14px;
+                letter-spacing: 10px;
+                margin-top: 20px;
+                margin-right: 10vw;
+            }
+        }
+        /* -----2019/10/31 Add */
+        /* ----EN ---- */
+        
+        .fontEN .ourStorypageEN li p {
+            margin-left: 280px;
+            word-break: keep-all;
+        }
+        
+        .fontEN ul li p {
+            letter-spacing: 0px;
+            word-break: keep-all;
+        }
+        
+        .fontEN ul li h4 {
+            letter-spacing: 3px;
+        }
+        
+        .fontEN ul li h4 {
+            letter-spacing: 5px;
+        }
+        
+        .fontEN ul li h5 {
+            letter-spacing: 2px;
+        }
+        
+        .fontEN .designBox {
+            text-align: left;
+        }
+        
+        .fontEN .designBox h4 {
+            letter-spacing: 0px;
+            border-width: 0px;
+            padding-left: 150px;
+        }
+        
+        .fontEN .designBox p {
+            letter-spacing: 0px;
+        }
+        /* ----------- */
+        /* 當天 */
+        
+        .ourStorypageEN .universe .uniFint1 {
+            position: absolute;
+            top: 50px;
+            left: 440px;
+            font-size: 15px;
+        }
+        /* 月球位置 */
+        
+        .ourStorypageEN .universe .uniFint2 {
+            position: absolute;
+            top: 70px;
+            left: 442px;
+            font-size: 15px;
+        }
+        /* 最遠點 */
+        
+        .ourStorypageEN .universe .uniFint3 {
+            position: absolute;
+            top: 110px;
+            left: 40px;
+            font-size: 15px;
+        }
+        /* 406700 km */
+        
+        .ourStorypageEN .universe .uniFint4 {
+            position: absolute;
+            top: 140px;
+            left: 60px;
+            letter-spacing: 2px;
+            font-size: 15px;
+        }
+        /* 最近點 */
+        
+        .ourStorypageEN .universe .uniFint5 {
+            position: absolute;
+            top: 110px;
+            left: 290px;
+            font-size: 15px;
+        }
+        /* 356500 km */
+        
+        .ourStorypageEN .universe .uniFint6 {
+            position: absolute;
+            top: 140px;
+            left: 300px;
+            letter-spacing: 2px;
+            font-size: 15px;
+        }
+        /* 月球軌跡 */
+        
+        .ourStorypageEN .universe .uniFint7 {
+            position: absolute;
+            font-size: 15px;
+            top: 250px;
+            left: 170px;
+        }
+        /* ----------- */
+        
+        .scrollDown {
+            font-family: bodoni;
+            position: absolute;
+            display: inline-block;
+            bottom: 190px;
+            left: 50px;
+            font-size: 50px;
+            color: #FFFFFF;
+            letter-spacing: 5px;
+        }
+        
+        .liner {
+            position: absolute;
+            display: inline-block;
+            height: 280px;
+            /* width: 10px; */
+            border-style: solid;
+            border-width: 0.5px;
+            border-color: #FFFFFF;
+            bottom: -50px;
+        }
+        
+        .language {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 50px;
+            right: 10px;
+            border-radius: 99em;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .scrollDown {
+                bottom: 125px;
+                left: 80px;
+                font-size: 30px;
+            }
+            .liner {
+                height: 200px;
+                /* bottom: -250px; */
+            }
+            .language {
+                width: 70px;
+                height: 70px;
+                /* top: 50px; */
+                right: 10px;
+            }
+            .fontEN .ourStorypageEN li p {
+                margin-left: 120px;
+            }
+            .fontEN .PhotoContent p {
+                line-height: 50px;
+                letter-spacing: 0px;
+                word-break: keep-all;
+                font-size: 25px;
+            }
+            .fontEN .designBox h4 {
+                letter-spacing: 0px;
+                border-width: 0px;
+                padding-left: 120px;
+            }
+            .fontEN .designBox p {
+                letter-spacing: 0px;
+                padding-left: 180px;
+            }
+            /* 當天 */
+            .ourStorypageEN .universe .uniFint1 {
+                position: absolute;
+                top: 60px;
+                left: 480px;
+            }
+            /* 月球位置 */
+            .ourStorypageEN .universe .uniFint2 {
+                position: absolute;
+                top: 80px;
+                left: 480px;
+            }
+            /* 最遠點 */
+            .ourStorypageEN .universe .uniFint3 {
+                position: absolute;
+                top: 110px;
+                left: 65px;
+            }
+            /* 406700 km */
+            .ourStorypageEN .universe .uniFint4 {
+                position: absolute;
+                top: 140px;
+                left: 90px;
+                letter-spacing: 2px;
+            }
+            /* 最近點 */
+            .ourStorypageEN .universe .uniFint5 {
+                position: absolute;
+                top: 110px;
+                left: 320px;
+            }
+            /* 356500 km */
+            .ourStorypageEN .universe .uniFint6 {
+                position: absolute;
+                top: 140px;
+                left: 340px;
+                letter-spacing: 2px;
+            }
+            /* 月球軌跡 */
+            .ourStorypageEN .universe .uniFint7 {
+                position: absolute;
+                top: 250px;
+                left: 190px;
+            }
+        }
+        
+        @media screen and (max-width: 425px) {
+            .scrollDown {
+                bottom: 80px;
+                left: 20px;
+                font-size: 20px;
+                letter-spacing: 3px;
+            }
+            .liner {
+                height: 150px;
+            }
+            .language {
+                width: 50px;
+                height: 50px;
+                top: 10px;
+                right: 5px;
+            }
+            .fontEN .ourStorypageEN li p {
+                margin-left: 20px;
+                margin-right: 20px;
+                word-break: keep-all;
+                font-size: 14px;
+            }
+            .fontEN .PhotoContent p {
+                line-height: 30px;
+                letter-spacing: 0px;
+                word-break: keep-all;
+                font-size: 18px;
+                padding-left: 20px;
+            }
+            .fontEN .PhotoContent br {
+                display: none;
+            }
+            .fontEN ul li h4 {
+                letter-spacing: 5px;
+            }
+            .fontEN ul li h5 {
+                letter-spacing: 1px;
+            }
+            .fontEN .designBox p {
+                letter-spacing: 0px;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .fontEN .designBox p br {
+                display: none;
+            }
+            .fontEN .designBox h4 {
+                padding-left: 45px;
+            }
+            /* 當天 */
+            .ourStorypageEN .universe .uniFint1 {
+                position: absolute;
+                top: 35px;
+                left: 310px;
+            }
+            /* 月球位置 */
+            .ourStorypageEN .universe .uniFint2 {
+                position: absolute;
+                top: 55px;
+                left: 350px;
+            }
+            /* 最遠點 */
+            .ourStorypageEN .universe .uniFint3 {
+                position: absolute;
+                top: 70px;
+                left: 40px;
+                font-size: 14px;
+            }
+            /* 406700 km */
+            .ourStorypageEN .universe .uniFint4 {
+                position: absolute;
+                top: 95px;
+                left: 55px;
+                letter-spacing: 2px;
+            }
+            /* 最近點 */
+            .ourStorypageEN .universe .uniFint5 {
+                position: absolute;
+                top: 70px;
+                left: 220px;
+                font-size: 14px;
+            }
+            /* 356500 km */
+            .ourStorypageEN .universe .uniFint6 {
+                position: absolute;
+                top: 95px;
+                left: 230px;
+                letter-spacing: 2px;
+            }
+            /* 月球軌跡 */
+            .ourStorypageEN .universe .uniFint7 {
+                position: absolute;
+                top: 170px;
+                left: 135px;
+            }
+        }
+        
+        @media screen and (max-width: 375px) {
+            .scrollDown {
+                bottom: 55px;
+                left: 30px;
+                font-size: 16px;
+                letter-spacing: 3px;
+            }
+            .liner {
+                height: 120px;
+            }
+            .language {
+                width: 50px;
+                height: 50px;
+                top: 5px;
+                right: 5px;
+            }
+            .fontEN .ourStorypageEN br {
+                display: none;
+            }
+            /* 當天 */
+            .ourStorypageEN .universe .uniFint1 {
+                position: absolute;
+                top: 15px;
+                left: 260px;
+                font-size: 10px;
+            }
+            /* 月球位置 */
+            .ourStorypageEN .universe .uniFint2 {
+                position: absolute;
+                top: 35px;
+                left: 290px;
+                font-size: 10px;
+            }
+            /* 最遠點 */
+            .ourStorypageEN .universe .uniFint3 {
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                font-size: 10px;
+            }
+            /* 406700 km */
+            .ourStorypageEN .universe .uniFint4 {
+                position: absolute;
+                top: 65px;
+                left: 70px;
+                letter-spacing: 1px;
+                font-size: 10px;
+            }
+            /* 最近點 */
+            .ourStorypageEN .universe .uniFint5 {
+                position: absolute;
+                top: 40px;
+                left: 178px;
+                font-size: 10px;
+            }
+            /* 356500 km */
+            .ourStorypageEN .universe .uniFint6 {
+                position: absolute;
+                top: 65px;
+                left: 195px;
+                letter-spacing: 1px;
+                font-size: 10px;
+            }
+            /* 月球軌跡 */
+            .ourStorypageEN .universe .uniFint7 {
+                position: absolute;
+                top: 115px;
+                left: 125px;
+                font-size: 10px;
+            }
+        }
+        
+        @media screen and (max-width: 320px) {
+            .scrollDown {
+                left: 20px;
+                font-size: 16px;
+                letter-spacing: 1.5px;
+            }
+            .liner {
+                height: 120px;
+            }
+            .language {
+                width: 35px;
+                height: 35px;
+                top: 5px;
+                right: 5px;
+            }
+            .fontEN .PhotoContent p {
+                line-height: 30px;
+                font-size: 16px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .fontEN .designBox p {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .fontEN .designBox h4 {
+                padding-left: 15px;
+            }
+            /* 當天 */
+            .ourStorypageEN .universe .uniFint1 {
+                position: absolute;
+                top: 0px;
+                left: 210px;
+            }
+            /* 月球位置 */
+            .ourStorypageEN .universe .uniFint2 {
+                position: absolute;
+                top: 20px;
+                left: 250px;
+            }
+            /* 最遠點 */
+            .ourStorypageEN .universe .uniFint3 {
+                position: absolute;
+                top: 40px;
+                left: 15px;
+                font-size: 10px;
+            }
+            /* 406700 km */
+            .ourStorypageEN .universe .uniFint4 {
+                position: absolute;
+                top: 65px;
+                left: 40px;
+            }
+            /* 最近點 */
+            .ourStorypageEN .universe .uniFint5 {
+                position: absolute;
+                top: 40px;
+                left: 155px;
+            }
+            /* 356500 km */
+            .ourStorypageEN .universe .uniFint6 {
+                position: absolute;
+                top: 65px;
+                left: 170px;
+            }
+            /* 月球軌跡 */
+            .ourStorypageEN .universe .uniFint7 {
+                position: absolute;
+                top: 120px;
+                left: 95px;
+            }
+        }

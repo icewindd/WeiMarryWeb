@@ -1712,6 +1712,9 @@
             .fontEN .PhotoContent br {
                 display: none;
             }
+            .fontEN .PageBrCencel br {
+                display: none;
+            }
             .fontEN ul li h4 {
                 letter-spacing: 5px;
             }

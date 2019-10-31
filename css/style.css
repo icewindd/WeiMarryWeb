@@ -1712,11 +1712,17 @@
             .fontEN .PhotoContent br {
                 display: none;
             }
+            .brCancel P br {
+                display: none;
+            }
             .fontEN ul li h4 {
                 letter-spacing: 5px;
             }
             .fontEN ul li h5 {
                 letter-spacing: 1px;
+            }
+            .fontEN ul li h3 {
+                letter-spacing: 5px;
             }
             .fontEN .designBox p {
                 letter-spacing: 0px;
@@ -1863,6 +1869,9 @@
                 height: 35px;
                 top: 5px;
                 right: 5px;
+            }
+            .fontEN .ourStorypageEN h5 {
+                font-size: 20px;
             }
             .fontEN .PhotoContent p {
                 line-height: 30px;
